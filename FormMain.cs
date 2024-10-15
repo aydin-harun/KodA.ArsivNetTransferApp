@@ -308,6 +308,8 @@ namespace KodA.ArsivNetTransferApp
             parametre.tipIdSpecified = true;
             parametre.kapsamBitisZamaniSpecified = false;
             parametre.remoteId = tPageGroupId.ToString();
+            parametre.kod = tPageGroupId.ToString();
+            parametre.ad = tPageGroupId.ToString();
             if (currentDepartman.DepartmanCode != "DIA" && currentDepartman.DepartmanCode != "Fotograf")
             {
                 parametre.ustveri = new ArsivMalzemeSvc.arsivMalzemesiUstveri()
@@ -335,7 +337,7 @@ namespace KodA.ArsivNetTransferApp
                 }
             };
             parametre.fizikselDurumu = "H";
-            parametre.gizlilikDerecesiKod = "C";
+            parametre.gizlilikDerecesiKod = "H";
             parametre.ureticiId = arsivNetUreticiId;
             parametre.ureticiIdSpecified = true;
             int?[] dIds = new int?[1];
@@ -354,51 +356,51 @@ namespace KodA.ArsivNetTransferApp
                 var docTypeIndexMap = docTypeIndexMaps.Where(ee => ee.tDocTypeIndexMapId == e.tDocTypeIndexMapId).FirstOrDefault();
                 if (docTypeIndexMap != null)
                 {
-                    if (docTypeIndexMap.FieldDataType == EnumFieldDataType.Sayi.GetHashCode())
-                    {
-                        if (row[e.SBFieldName] != DBNull.Value)
-                        {
-                            fileData[e.GDFieldName] = (int)row[e.SBFieldName];
-                        }
-                        else
-                        {
-                            fileData[e.GDFieldName] = null;
-                        }
-                    }
-                    else if (docTypeIndexMap.FieldDataType == EnumFieldDataType.OndalıkSayi.GetHashCode())
-                    {
-                        if (row[e.SBFieldName] != DBNull.Value)
-                        {
-                            fileData[e.GDFieldName] = (decimal)row[e.SBFieldName];
-                        }
-                        else
-                        {
-                            fileData[e.GDFieldName] = null;
-                        }
-                    }
-                    else if (docTypeIndexMap.FieldDataType == EnumFieldDataType.DogruYanlis.GetHashCode())
-                    {
-                        if (row[e.SBFieldName] != DBNull.Value)
-                        {
-                            fileData[e.GDFieldName] = (bool)row[e.SBFieldName];
-                        }
-                        else
-                        {
-                            fileData[e.GDFieldName] = null;
-                        }
-                    }
-                    else if (docTypeIndexMap.FieldDataType == EnumFieldDataType.Metin.GetHashCode())
-                    {
-                        if (row[e.SBFieldName] != DBNull.Value)
-                        {
-                            fileData[e.GDFieldName] = row[e.SBFieldName].ToString();
-                        }
-                        else
-                        {
-                            fileData[e.GDFieldName] = null;
-                        }
-                    }
-                    else if (docTypeIndexMap.FieldDataType == EnumFieldDataType.Tarih.GetHashCode() || docTypeIndexMap.FieldDataType == EnumFieldDataType.TarihSaat.GetHashCode())
+                    //if (docTypeIndexMap.FieldDataType == EnumFieldDataType.Sayi.GetHashCode())
+                    //{
+                    //    if (row[e.SBFieldName] != DBNull.Value)
+                    //    {
+                    //        fileData[e.GDFieldName] = row[e.SBFieldName].ToString();
+                    //    }
+                    //    else
+                    //    {
+                    //        fileData[e.GDFieldName] = "";
+                    //    }
+                    //}
+                    //else if (docTypeIndexMap.FieldDataType == EnumFieldDataType.OndalıkSayi.GetHashCode())
+                    //{
+                    //    if (row[e.SBFieldName] != DBNull.Value)
+                    //    {
+                    //        fileData[e.GDFieldName] = (decimal)row[e.SBFieldName];
+                    //    }
+                    //    else
+                    //    {
+                    //        fileData[e.GDFieldName] = null;
+                    //    }
+                    //}
+                    //else if (docTypeIndexMap.FieldDataType == EnumFieldDataType.DogruYanlis.GetHashCode())
+                    //{
+                    //    if (row[e.SBFieldName] != DBNull.Value)
+                    //    {
+                    //        fileData[e.GDFieldName] = (bool)row[e.SBFieldName];
+                    //    }
+                    //    else
+                    //    {
+                    //        fileData[e.GDFieldName] = null;
+                    //    }
+                    //}
+                    //else if (docTypeIndexMap.FieldDataType == EnumFieldDataType.Metin.GetHashCode())
+                    //{
+                    //    if (row[e.SBFieldName] != DBNull.Value)
+                    //    {
+                    //        fileData[e.GDFieldName] = row[e.SBFieldName].ToString();
+                    //    }
+                    //    else
+                    //    {
+                    //        fileData[e.GDFieldName] = null;
+                    //    }
+                    //}
+                    if (docTypeIndexMap.FieldDataType == EnumFieldDataType.Tarih.GetHashCode() || docTypeIndexMap.FieldDataType == EnumFieldDataType.TarihSaat.GetHashCode())
                     {
                         if (row[e.SBFieldName] != DBNull.Value)
                         {
@@ -409,16 +411,27 @@ namespace KodA.ArsivNetTransferApp
                             fileData[e.GDFieldName] = null;
                         }
                     }
+                    else
+                    {
+                        if (row[e.SBFieldName] != DBNull.Value)
+                        {
+                            fileData[e.GDFieldName] = row[e.SBFieldName].ToString();
+                        }
+                        else
+                        {
+                            fileData[e.GDFieldName] = null;
+                        }
+                    }
                 }
                 else// barkod alanı icin istisna
                 {
-                    if (row[e.SBFieldName] != DBNull.Value)
+                    if (row["BarcodeValue"] != DBNull.Value)
                     {
-                        fileData[e.GDFieldName] = row[e.SBFieldName].ToString();
+                        fileData["Barkod"] = row["BarcodeValue"].ToString();
                     }
                     else
                     {
-                        fileData[e.GDFieldName] = null;
+                        fileData["Barkod"] = null;
                     }
                 }
             });

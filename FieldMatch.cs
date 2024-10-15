@@ -15,5 +15,6 @@ namespace KodA.ArsivNetTransferApp
         public string USTVER_ALAN_ADI { get; set; }
 
         public int FieldType { get; set; }
+
     }
 }
