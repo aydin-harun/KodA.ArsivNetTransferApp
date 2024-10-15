@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E40C9AD2-7992-4C33-B08D-6E86C170E91A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KodA.ArsivNetTransferApp</RootNamespace>
+    <AssemblyName>KodA.ArsivNetTransferApp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="KodA.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refs\KodA.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="KodA.DataAccessLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refs\KodA.DataAccessLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="KodA.FileProvider, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refs\KodA.FileProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="KodA.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refs\KodA.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="KodA.Types, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refs\KodA.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connected Services\ArsivMalzemeSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ArsivPlanlamaSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\KullaniciSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\VarlikYonetimiSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\VeriSozluguYonetimiSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="FieldMatch.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSettings.Designer.cs">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Connected Services\ArsivMalzemeSvc\ArsivMalzemeServiceService1.wsdl" />
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemeleriniKlasordenCikartResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiBilgiOkuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDamgalaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDetayCikarResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDetayDamgalaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDetayDosyaOkuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDetayDosyaOkuTokenResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDetayDosyaYazResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDetayEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDetayEypOkuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDetayGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDetayListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDetayListeleTokenResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDetayOcrIcerikOkuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDetayOcrIcerikYazResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDetaySilResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDetayTipleriSorgulaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiDogrulaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiIslemEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiIslemGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiIslemleriniListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiListeleTokenResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiListleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiMulkiyetTarihcesiEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiMulkiyetTarihcesiGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiMulkiyetTarihcesiListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiMulkiyetTarihcesiSilResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiniDizindenCikartResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiniDizineEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiniKlasoreEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiOkuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiOkuTokenResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.arsivMalzemesiOkuYetkisizResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.helloWord2Response1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.hizliAraResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.indekslenecekBilgiGetirResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.indekslenecekDosyaIndeksleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.indekslenecekDosyaSifirlaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.indekslenecekleriListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.klasorArsivMalzemeleriniListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.klasorEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.klasorGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.klasorListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.klasorListeleYetkiliResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.klasorOkuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.ocrYapResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.referansBilgisiOkuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.serviceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.tiffBilgisiSorgulaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivMalzemeSvc\KodA.ArsivNetTransferApp.ArsivMalzemeSvc.ustyaziDosyasiOkuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\ArsivPlanlamaServiceService1.wsdl" />
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniBilgileriniSorgulaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniByArsivPlaniAndRootResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniCocuklariAraResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniCocuklariAraYetkiliResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniCocuklariListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniCocuklariListeleYetkiliResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniKopyalaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniOkuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniRootGetirResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniRootGetirYetkiliResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniSilResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniTasiResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivPlaniEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivPlaniGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivPlaniOkuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivPlanlariniListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivPlanlariniListeleYetkiliResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.dizinIcerikListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.helloWord2Response1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ArsivPlanlamaSvc\KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.serviceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.aksiyonKontrolResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkisiKontrolResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.externalKullanicilariListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.getMenuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.getUserLoggedInResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.getYetkiVermeDurumResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.isLoggedInResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciAktiflikGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciArsivMalzemesiYetkiKaldirResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciArsivMalzemesiYetkileriniListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciArsivMalzemesiYetkiVerResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciDizinUreticiYetkileriniListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciDizinUreticiYetkisiEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciDizinUreticiYetkisiSilResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciDizinVeDizinUreticiYetkisiGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciDizinVeDizinUreticiYetkisiListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciDizinYetkileriniListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciDizinYetkisiEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciDizinYetkisiGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciDizinYetkisiKaldirResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciGirisResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciKlasorYetkisiEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciKlasorYetkisiGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciKlasorYetkisiKaldirResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciKurumLogoListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullanicilariListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciTercihGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.kullaniciTercihOkuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.logoutResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.seciliBirimDegistirResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.serviceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KodA.ArsivNetTransferApp.KullaniciSvc.temaDegistirResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\KullaniciSvc\KullaniciServiceService1.wsdl" />
+    <None Include="Connected Services\VarlikYonetimiSvc\KodA.ArsivNetTransferApp.VarlikYonetimiSvc.bulutKurumOkuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VarlikYonetimiSvc\KodA.ArsivNetTransferApp.VarlikYonetimiSvc.entegrasyonVarlikEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VarlikYonetimiSvc\KodA.ArsivNetTransferApp.VarlikYonetimiSvc.entegrasyonVarlikListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VarlikYonetimiSvc\KodA.ArsivNetTransferApp.VarlikYonetimiSvc.helloWordResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VarlikYonetimiSvc\KodA.ArsivNetTransferApp.VarlikYonetimiSvc.serviceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VarlikYonetimiSvc\KodA.ArsivNetTransferApp.VarlikYonetimiSvc.varlikCocuklariListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VarlikYonetimiSvc\KodA.ArsivNetTransferApp.VarlikYonetimiSvc.varlikEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VarlikYonetimiSvc\KodA.ArsivNetTransferApp.VarlikYonetimiSvc.varlikGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VarlikYonetimiSvc\KodA.ArsivNetTransferApp.VarlikYonetimiSvc.varlikListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VarlikYonetimiSvc\KodA.ArsivNetTransferApp.VarlikYonetimiSvc.varlikListeOkuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VarlikYonetimiSvc\KodA.ArsivNetTransferApp.VarlikYonetimiSvc.varlikListeOkuTokenResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VarlikYonetimiSvc\KodA.ArsivNetTransferApp.VarlikYonetimiSvc.varlikOkuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VarlikYonetimiSvc\KodA.ArsivNetTransferApp.VarlikYonetimiSvc.varlikParentGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VarlikYonetimiSvc\KodA.ArsivNetTransferApp.VarlikYonetimiSvc.varlikRootGetirResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VarlikYonetimiSvc\KodA.ArsivNetTransferApp.VarlikYonetimiSvc.varlikUstveriGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VarlikYonetimiSvc\VarlikYonetimiServiceService1.wsdl" />
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.birimTipleriGetirResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.degerAktifYapResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.degerEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.degerGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.degerListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.degerPasifYapResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.entegrasyonVarlikSorgulaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.entegrasyonVarlikTanimSorgulaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.serviceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.tipEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.tipGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.tipListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.tipOkuResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.tipYayimGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.ustVeriTanimEkleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.ustVeriTanimGuncelleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.ustveriTanimiAlanlariniListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.ustVeriTanimSorgulaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.ustVeriTanimSorgulaTokenResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.varlikEntegrasyonAttributeAtaResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.varlikEntegrasyonMethodListeleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.varlikEntegrasyonMethodSecResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\KodA.ArsivNetTransferApp.VeriSozluguYonetimiSvc.varlikEntegrasyonUstveriBelirleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ArsivMalzemeSvc\" />
+    <WCFMetadataStorage Include="Connected Services\ArsivPlanlamaSvc\" />
+    <WCFMetadataStorage Include="Connected Services\KullaniciSvc\" />
+    <WCFMetadataStorage Include="Connected Services\VarlikYonetimiSvc\" />
+    <WCFMetadataStorage Include="Connected Services\VeriSozluguYonetimiSvc\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\VarlikYonetimiSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\VarlikYonetimiSvc\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\VarlikYonetimiSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ArsivMalzemeSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ArsivMalzemeSvc\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ArsivMalzemeSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ArsivPlanlamaSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ArsivPlanlamaSvc\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ArsivPlanlamaSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\KullaniciSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\KullaniciSvc\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\KullaniciSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSettings.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\VeriSozluguYonetimiSvc\VeriSozluguYonetimiServiceService1.wsdl" />
+    <None Include="packages.config" />
+    <None Include="Resources\icons8-export-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reset-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear_738853.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

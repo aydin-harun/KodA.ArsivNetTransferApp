@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://webservices.arsivnet.turksat.com.tr/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="VarlikYonetimiServiceService" targetNamespace="http://webservices.arsivnet.turksat.com.tr/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://webservices.arsivnet.turksat.com.tr/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="bulutKurumOku" type="tns:bulutKurumOku" />
+      <xs:element name="bulutKurumOkuResponse" type="tns:bulutKurumOkuResponse" />
+      <xs:element name="entegrasyonVarlikEkle" type="tns:entegrasyonVarlikEkle" />
+      <xs:element name="entegrasyonVarlikEkleResponse" type="tns:entegrasyonVarlikEkleResponse" />
+      <xs:element name="entegrasyonVarlikListele" type="tns:entegrasyonVarlikListele" />
+      <xs:element name="entegrasyonVarlikListeleResponse" type="tns:entegrasyonVarlikListeleResponse" />
+      <xs:element name="helloWord" type="tns:helloWord" />
+      <xs:element name="helloWordResponse" type="tns:helloWordResponse" />
+      <xs:element name="varlikCocuklariListele" type="tns:varlikCocuklariListele" />
+      <xs:element name="varlikCocuklariListeleResponse" type="tns:varlikCocuklariListeleResponse" />
+      <xs:element name="varlikEkle" type="tns:varlikEkle" />
+      <xs:element name="varlikEkleResponse" type="tns:varlikEkleResponse" />
+      <xs:element name="varlikGuncelle" type="tns:varlikGuncelle" />
+      <xs:element name="varlikGuncelleResponse" type="tns:varlikGuncelleResponse" />
+      <xs:element name="varlikListeOku" type="tns:varlikListeOku" />
+      <xs:element name="varlikListeOkuResponse" type="tns:varlikListeOkuResponse" />
+      <xs:element name="varlikListeOkuToken" type="tns:varlikListeOkuToken" />
+      <xs:element name="varlikListeOkuTokenResponse" type="tns:varlikListeOkuTokenResponse" />
+      <xs:element name="varlikListele" type="tns:varlikListele" />
+      <xs:element name="varlikListeleResponse" type="tns:varlikListeleResponse" />
+      <xs:element name="varlikOku" type="tns:varlikOku" />
+      <xs:element name="varlikOkuResponse" type="tns:varlikOkuResponse" />
+      <xs:element name="varlikParentGuncelle" type="tns:varlikParentGuncelle" />
+      <xs:element name="varlikParentGuncelleResponse" type="tns:varlikParentGuncelleResponse" />
+      <xs:element name="varlikRootGetir" type="tns:varlikRootGetir" />
+      <xs:element name="varlikRootGetirResponse" type="tns:varlikRootGetirResponse" />
+      <xs:element name="varlikUstveriGuncelle" type="tns:varlikUstveriGuncelle" />
+      <xs:element name="varlikUstveriGuncelleResponse" type="tns:varlikUstveriGuncelleResponse" />
+      <xs:complexType name="entegrasyonVarlikEkle">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:entegrasyonVarlikEkleParametre" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="entegrasyonVarlikEkleParametre">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:serviceParameter">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="selectedEntegrasyonVarlik" type="xs:string" />
+              <xs:element minOccurs="0" name="tipId" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="serviceParameter" abstract="true">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="entegrasyonVarlikEkleResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:serviceResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="serviceResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="detailMessage" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="dtoList" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="exceptionList" nillable="true" type="tns:exception" />
+          <xs:element name="success" type="xs:boolean" />
+          <xs:element minOccurs="0" name="title" type="xs:string" />
+          <xs:element name="total" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="exception">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:throwable">
+            <xs:sequence />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="throwable">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="stackTrace" nillable="true" type="tns:stackTraceElement" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="stackTraceElement" final="extension restriction">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="varlikEkleSonuc">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:int" />
+          <xs:element minOccurs="0" name="kod" type="xs:string" />
+          <xs:element minOccurs="0" name="name" type="xs:string" />
+          <xs:element minOccurs="0" name="varlikUstVeriId" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikParentGuncelle">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:varlikParentGuncelleParametre" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikParentGuncelleParametre">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:serviceParameter">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="id" type="xs:int" />
+              <xs:element minOccurs="0" name="parentId" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="varlikParentGuncelleResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:serviceResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlik">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:int" />
+          <xs:element minOccurs="0" name="parentId" type="xs:int" />
+          <xs:element minOccurs="0" name="tipId" type="xs:int" />
+          <xs:element minOccurs="0" name="kod" type="xs:string" />
+          <xs:element minOccurs="0" name="ad" type="xs:string" />
+          <xs:element minOccurs="0" name="kisaAd" type="xs:string" />
+          <xs:element minOccurs="0" name="sira" type="xs:int" />
+          <xs:element minOccurs="0" name="gecerlilikBaslangicTarihi" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="gecerlilikBitisTarihi" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="remoteId" type="xs:string" />
+          <xs:element minOccurs="0" name="guncellenmeZamani" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="belgenetId" type="xs:long" />
+          <xs:element minOccurs="0" name="bulutKurumId" type="xs:int" />
+          <xs:element minOccurs="0" name="bulutKurumAdi" type="xs:string" />
+          <xs:element minOccurs="0" name="treePath" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikEkle">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:varlikEkleParametre" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikEkleParametre">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:serviceParameter">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ad" type="xs:string" />
+              <xs:element minOccurs="0" name="belgenetId" type="xs:long" />
+              <xs:element minOccurs="0" name="gecerlilikBaslangicTarihi" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="gecerlilikBitisTarihi" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="guncellenmeZamani" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="id" type="xs:int" />
+              <xs:element minOccurs="0" name="kisaAd" type="xs:string" />
+              <xs:element minOccurs="0" name="kod" type="xs:string" />
+              <xs:element minOccurs="0" name="parentId" type="xs:int" />
+              <xs:element minOccurs="0" name="remoteId" type="xs:string" />
+              <xs:element minOccurs="0" name="sira" type="xs:int" />
+              <xs:element minOccurs="0" name="tipId" type="xs:int" />
+              <xs:element minOccurs="0" name="ustveri" type="tns:varlikUstveri" />
+              <xs:element minOccurs="0" name="uzakId" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="varlikUstveri">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="guncellenmeZamani" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="id" type="xs:int" />
+          <xs:element minOccurs="0" name="ustveri" type="xs:string" />
+          <xs:element minOccurs="0" name="ustveriTanimId" type="xs:int" />
+          <xs:element minOccurs="0" name="varlikId" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikEkleResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:serviceResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="entegrasyonVarlikListele">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:entegrasyonVarlikListeleParametre" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="entegrasyonVarlikListeleParametre">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:serviceParameter">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="idList" type="xs:string" />
+              <xs:element minOccurs="0" name="query" type="xs:string" />
+              <xs:element minOccurs="0" name="tipId" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="entegrasyonVarlikListeleResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:serviceResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="entegrasyonVarlikListeleSonuc">
+        <xs:sequence>
+          <xs:element name="etiketList">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="entry">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element minOccurs="0" name="key" type="xs:string" />
+                      <xs:element minOccurs="0" name="value" type="xs:string" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element minOccurs="0" name="id" type="xs:int" />
+          <xs:element name="valueList">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="entry">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element minOccurs="0" name="key" type="xs:string" />
+                      <xs:element minOccurs="0" name="value" type="xs:string" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikCocuklariListele">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:varlikCocuklariniListeleParametre" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikCocuklariniListeleParametre">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:serviceParameter">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="id" type="xs:int" />
+              <xs:element minOccurs="0" name="limit" type="xs:int" />
+              <xs:element minOccurs="0" name="page" type="xs:int" />
+              <xs:element minOccurs="0" name="start" type="xs:int" />
+              <xs:element minOccurs="0" name="tipId" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="varlikCocuklariListeleResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:serviceResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikListeOkuToken">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:varlikListeOkuParametre" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikListeOkuParametre">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:serviceParameter">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="bnToken" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="idList" nillable="true" type="xs:int" />
+              <xs:element name="tipId" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="varlikListeOkuTokenResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:serviceResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="helloWord">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="helloWordResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikRootGetir">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:varlikRootGetirParametre" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikRootGetirParametre">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:serviceParameter">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="tipId" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="varlikRootGetirResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:serviceResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikRootGetirSonuc">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ad" type="xs:string" />
+          <xs:element minOccurs="0" name="belgenetId" type="xs:long" />
+          <xs:element name="expanded" type="xs:boolean" />
+          <xs:element minOccurs="0" name="gecerlilikBaslangicTarihi" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="gecerlilikBitisTarihi" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="guncellenmeZamani" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="id" type="xs:int" />
+          <xs:element minOccurs="0" name="kisaAd" type="xs:string" />
+          <xs:element minOccurs="0" name="kod" type="xs:string" />
+          <xs:element minOccurs="0" name="parentId" type="xs:int" />
+          <xs:element minOccurs="0" name="remoteId" type="xs:string" />
+          <xs:element minOccurs="0" name="sira" type="xs:int" />
+          <xs:element minOccurs="0" name="tipId" type="xs:int" />
+          <xs:element minOccurs="0" name="varlikUstveri" type="tns:varlikUstveri" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="bulutKurumOku">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:bulutKurumOkuParametre" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="bulutKurumOkuParametre">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:serviceParameter">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="id" type="xs:int" />
+              <xs:element minOccurs="0" name="kurumId" type="xs:long" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="bulutKurumOkuResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:serviceResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="bulutKurum">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:int" />
+          <xs:element minOccurs="0" name="kurumId" type="xs:int" />
+          <xs:element minOccurs="0" name="kurumAdi" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikListele">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:listServiceParametre" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="listServiceParametre">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:listServiceNoFilterParametre">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="filter" nillable="true" type="tns:filterObject" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="listServiceNoFilterParametre">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:serviceParameter">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="limit" type="xs:int" />
+              <xs:element minOccurs="0" name="page" type="xs:int" />
+              <xs:element minOccurs="0" name="query" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="sort" nillable="true" type="tns:sortObject" />
+              <xs:element minOccurs="0" name="start" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="filterObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="operator" type="xs:string" />
+          <xs:element minOccurs="0" name="property" type="xs:string" />
+          <xs:element minOccurs="0" name="value" type="xs:string" />
+          <xs:element minOccurs="0" name="value2" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="sortObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="direction" type="xs:string" />
+          <xs:element minOccurs="0" name="property" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikListeleResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:serviceResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikListeOku">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:varlikListeOkuParametre" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikListeOkuResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:serviceResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikGuncelle">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:varlikGuncelleParametre" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikGuncelleParametre">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:serviceParameter">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ad" type="xs:string" />
+              <xs:element minOccurs="0" name="belgenetId" type="xs:long" />
+              <xs:element minOccurs="0" name="gecerlilikBaslangicTarihi" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="gecerlilikBitisTarihi" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="guncellenmeZamani" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="id" type="xs:int" />
+              <xs:element minOccurs="0" name="kisaAd" type="xs:string" />
+              <xs:element minOccurs="0" name="kod" type="xs:string" />
+              <xs:element minOccurs="0" name="remoteId" type="xs:string" />
+              <xs:element minOccurs="0" name="sira" type="xs:int" />
+              <xs:element minOccurs="0" name="tipId" type="xs:int" />
+              <xs:element name="ustVeriGuncelle" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ustveri" type="tns:varlikUstveri" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="varlikGuncelleResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:serviceResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikOku">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:varlikOkuParametre" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikOkuParametre">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:serviceParameter">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="belgenetId" type="xs:long" />
+              <xs:element minOccurs="0" name="id" type="xs:int" />
+              <xs:element minOccurs="0" name="kod" type="xs:string" />
+              <xs:element minOccurs="0" name="remoteId" type="xs:int" />
+              <xs:element minOccurs="0" name="tipId" type="xs:int" />
+              <xs:element minOccurs="0" name="tipKod" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="varlikOkuResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:serviceResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikOkuSonuc">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="varlik" type="tns:varlik" />
+          <xs:element minOccurs="0" name="varlikUstveri" type="tns:varlikUstveri" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikUstveriGuncelle">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:varlikOkuParametre" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="varlikUstveriGuncelleResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:serviceResult" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="varlikEkle">
+    <wsdl:part name="parameters" element="tns:varlikEkle" />
+  </wsdl:message>
+  <wsdl:message name="varlikCocuklariListele">
+    <wsdl:part name="parameters" element="tns:varlikCocuklariListele" />
+  </wsdl:message>
+  <wsdl:message name="varlikListeOkuToken">
+    <wsdl:part name="parameters" element="tns:varlikListeOkuToken" />
+  </wsdl:message>
+  <wsdl:message name="entegrasyonVarlikEkleResponse">
+    <wsdl:part name="parameters" element="tns:entegrasyonVarlikEkleResponse" />
+  </wsdl:message>
+  <wsdl:message name="helloWord">
+    <wsdl:part name="parameters" element="tns:helloWord" />
+  </wsdl:message>
+  <wsdl:message name="varlikListele">
+    <wsdl:part name="parameters" element="tns:varlikListele" />
+  </wsdl:message>
+  <wsdl:message name="varlikListeOku">
+    <wsdl:part name="parameters" element="tns:varlikListeOku" />
+  </wsdl:message>
+  <wsdl:message name="varlikGuncelleResponse">
+    <wsdl:part name="parameters" element="tns:varlikGuncelleResponse" />
+  </wsdl:message>
+  <wsdl:message name="varlikListeOkuResponse">
+    <wsdl:part name="parameters" element="tns:varlikListeOkuResponse" />
+  </wsdl:message>
+  <wsdl:message name="varlikOku">
+    <wsdl:part name="parameters" element="tns:varlikOku" />
+  </wsdl:message>
+  <wsdl:message name="varlikUstveriGuncelle">
+    <wsdl:part name="parameters" element="tns:varlikUstveriGuncelle" />
+  </wsdl:message>
+  <wsdl:message name="entegrasyonVarlikEkle">
+    <wsdl:part name="parameters" element="tns:entegrasyonVarlikEkle" />
+  </wsdl:message>
+  <wsdl:message name="varlikParentGuncelle">
+    <wsdl:part name="parameters" element="tns:varlikParentGuncelle" />
+  </wsdl:message>
+  <wsdl:message name="varlikListeleResponse">
+    <wsdl:part name="parameters" element="tns:varlikListeleResponse" />
+  </wsdl:message>
+  <wsdl:message name="varlikEkleResponse">
+    <wsdl:part name="parameters" element="tns:varlikEkleResponse" />
+  </wsdl:message>
+  <wsdl:message name="bulutKurumOkuResponse">
+    <wsdl:part name="parameters" element="tns:bulutKurumOkuResponse" />
+  </wsdl:message>
+  <wsdl:message name="varlikOkuResponse">
+    <wsdl:part name="parameters" element="tns:varlikOkuResponse" />
+  </wsdl:message>
+  <wsdl:message name="entegrasyonVarlikListele">
+    <wsdl:part name="parameters" element="tns:entegrasyonVarlikListele" />
+  </wsdl:message>
+  <wsdl:message name="varlikParentGuncelleResponse">
+    <wsdl:part name="parameters" element="tns:varlikParentGuncelleResponse" />
+  </wsdl:message>
+  <wsdl:message name="varlikCocuklariListeleResponse">
+    <wsdl:part name="parameters" element="tns:varlikCocuklariListeleResponse" />
+  </wsdl:message>
+  <wsdl:message name="varlikRootGetir">
+    <wsdl:part name="parameters" element="tns:varlikRootGetir" />
+  </wsdl:message>
+  <wsdl:message name="varlikListeOkuTokenResponse">
+    <wsdl:part name="parameters" element="tns:varlikListeOkuTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="bulutKurumOku">
+    <wsdl:part name="parameters" element="tns:bulutKurumOku" />
+  </wsdl:message>
+  <wsdl:message name="helloWordResponse">
+    <wsdl:part name="parameters" element="tns:helloWordResponse" />
+  </wsdl:message>
+  <wsdl:message name="entegrasyonVarlikListeleResponse">
+    <wsdl:part name="parameters" element="tns:entegrasyonVarlikListeleResponse" />
+  </wsdl:message>
+  <wsdl:message name="varlikRootGetirResponse">
+    <wsdl:part name="parameters" element="tns:varlikRootGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="varlikGuncelle">
+    <wsdl:part name="parameters" element="tns:varlikGuncelle" />
+  </wsdl:message>
+  <wsdl:message name="varlikUstveriGuncelleResponse">
+    <wsdl:part name="parameters" element="tns:varlikUstveriGuncelleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="VarlikYonetimiService">
+    <wsdl:operation name="entegrasyonVarlikEkle">
+      <wsdl:input name="entegrasyonVarlikEkle" message="tns:entegrasyonVarlikEkle" />
+      <wsdl:output name="entegrasyonVarlikEkleResponse" message="tns:entegrasyonVarlikEkleResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="varlikParentGuncelle">
+      <wsdl:input name="varlikParentGuncelle" message="tns:varlikParentGuncelle" />
+      <wsdl:output name="varlikParentGuncelleResponse" message="tns:varlikParentGuncelleResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="varlikEkle">
+      <wsdl:input name="varlikEkle" message="tns:varlikEkle" />
+      <wsdl:output name="varlikEkleResponse" message="tns:varlikEkleResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="entegrasyonVarlikListele">
+      <wsdl:input name="entegrasyonVarlikListele" message="tns:entegrasyonVarlikListele" />
+      <wsdl:output name="entegrasyonVarlikListeleResponse" message="tns:entegrasyonVarlikListeleResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="varlikCocuklariListele">
+      <wsdl:input name="varlikCocuklariListele" message="tns:varlikCocuklariListele" />
+      <wsdl:output name="varlikCocuklariListeleResponse" message="tns:varlikCocuklariListeleResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="varlikListeOkuToken">
+      <wsdl:input name="varlikListeOkuToken" message="tns:varlikListeOkuToken" />
+      <wsdl:output name="varlikListeOkuTokenResponse" message="tns:varlikListeOkuTokenResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="helloWord">
+      <wsdl:input name="helloWord" message="tns:helloWord" />
+      <wsdl:output name="helloWordResponse" message="tns:helloWordResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="varlikRootGetir">
+      <wsdl:input name="varlikRootGetir" message="tns:varlikRootGetir" />
+      <wsdl:output name="varlikRootGetirResponse" message="tns:varlikRootGetirResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="bulutKurumOku">
+      <wsdl:input name="bulutKurumOku" message="tns:bulutKurumOku" />
+      <wsdl:output name="bulutKurumOkuResponse" message="tns:bulutKurumOkuResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="varlikListele">
+      <wsdl:input name="varlikListele" message="tns:varlikListele" />
+      <wsdl:output name="varlikListeleResponse" message="tns:varlikListeleResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="varlikListeOku">
+      <wsdl:input name="varlikListeOku" message="tns:varlikListeOku" />
+      <wsdl:output name="varlikListeOkuResponse" message="tns:varlikListeOkuResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="varlikGuncelle">
+      <wsdl:input name="varlikGuncelle" message="tns:varlikGuncelle" />
+      <wsdl:output name="varlikGuncelleResponse" message="tns:varlikGuncelleResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="varlikOku">
+      <wsdl:input name="varlikOku" message="tns:varlikOku" />
+      <wsdl:output name="varlikOkuResponse" message="tns:varlikOkuResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="varlikUstveriGuncelle">
+      <wsdl:input name="varlikUstveriGuncelle" message="tns:varlikUstveriGuncelle" />
+      <wsdl:output name="varlikUstveriGuncelleResponse" message="tns:varlikUstveriGuncelleResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VarlikYonetimiServiceServiceSoapBinding" type="tns:VarlikYonetimiService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="entegrasyonVarlikEkle">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="entegrasyonVarlikEkle">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="entegrasyonVarlikEkleResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="varlikParentGuncelle">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="varlikParentGuncelle">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="varlikParentGuncelleResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="varlikEkle">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="varlikEkle">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="varlikEkleResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entegrasyonVarlikListele">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="entegrasyonVarlikListele">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="entegrasyonVarlikListeleResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="varlikCocuklariListele">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="varlikCocuklariListele">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="varlikCocuklariListeleResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="varlikListeOkuToken">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="varlikListeOkuToken">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="varlikListeOkuTokenResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="helloWord">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="helloWord">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="helloWordResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="varlikRootGetir">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="varlikRootGetir">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="varlikRootGetirResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bulutKurumOku">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="bulutKurumOku">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="bulutKurumOkuResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="varlikListele">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="varlikListele">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="varlikListeleResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="varlikListeOku">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="varlikListeOku">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="varlikListeOkuResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="varlikGuncelle">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="varlikGuncelle">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="varlikGuncelleResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="varlikOku">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="varlikOku">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="varlikOkuResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="varlikUstveriGuncelle">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="varlikUstveriGuncelle">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="varlikUstveriGuncelleResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VarlikYonetimiServiceService">
+    <wsdl:port name="VarlikYonetimiServicePort" binding="tns:VarlikYonetimiServiceServiceSoapBinding">
+      <soap:address location="http://arsivnet.ankara.edu.tr/arsivnet_webservice/api/varlikyonetimiservicesoap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

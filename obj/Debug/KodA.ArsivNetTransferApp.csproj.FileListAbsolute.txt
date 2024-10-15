@@ -1,0 +1,215 @@
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.csproj.AssemblyReference.cache
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.csproj.SuggestedBindingRedirects.cache
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.FormMain.resources
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.Properties.Resources.resources
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.csproj.GenerateResource.cache
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.csproj.CoreCompileInputs.cache
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\bin\Debug\KodA.ArsivNetTransferApp.exe.config
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\bin\Debug\KodA.ArsivNetTransferApp.exe
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\bin\Debug\KodA.ArsivNetTransferApp.pdb
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\bin\Debug\KodA.Business.dll
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\bin\Debug\KodA.FileProvider.dll
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\bin\Debug\KodA.Types.dll
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\bin\Debug\KodA.DataAccessLayer.dll
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\bin\Debug\BCrypt.Net.dll
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\bin\Debug\KodA.Business.pdb
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\bin\Debug\KodA.FileProvider.pdb
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\bin\Debug\KodA.Types.pdb
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\bin\Debug\KodA.DataAccessLayer.pdb
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\bin\Debug\BCrypt.Net.xml
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.csproj.CopyComplete
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.exe
+D:\WorkSpace\ANKARA ÜNVERSİTESİ DİJİTAL ARŞİV PROJESİ 2022\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.pdb
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.csproj.AssemblyReference.cache
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.FormMain.resources
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.FormSettings.resources
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.Properties.Resources.resources
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.csproj.GenerateResource.cache
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.exe.licenses
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.csproj.CoreCompileInputs.cache
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.exe
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.pdb
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\KodA.ArsivNetTransferApp.exe.config
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\KodA.ArsivNetTransferApp.exe
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\KodA.ArsivNetTransferApp.pdb
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Data.Desktop.v22.1.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Data.v22.1.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Drawing.v22.1.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Printing.v22.1.Core.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Sparkline.v22.1.Core.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Utils.v22.1.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraEditors.v22.1.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraGrid.v22.1.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraLayout.v22.1.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraPrinting.v22.1.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\KodA.Business.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\KodA.FileProvider.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\KodA.Forms.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\KodA.Types.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\KodA.DataAccessLayer.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\BCrypt.Net.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraTreeList.v22.1.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Pdf.v22.1.Core.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Pdf.v22.1.Drawing.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraBars.v22.1.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.RichEdit.v22.1.Core.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Office.v22.1.Core.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\KodA.Business.pdb
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\KodA.FileProvider.pdb
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\KodA.Forms.pdb
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\KodA.Types.pdb
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Data.Desktop.v22.1.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Data.v22.1.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Printing.v22.1.Core.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Sparkline.v22.1.Core.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Utils.v22.1.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraEditors.v22.1.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraGrid.v22.1.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraLayout.v22.1.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraPrinting.v22.1.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\KodA.DataAccessLayer.pdb
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\BCrypt.Net.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraTreeList.v22.1.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Pdf.v22.1.Core.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Pdf.v22.1.Drawing.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraBars.v22.1.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.RichEdit.v22.1.Core.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Office.v22.1.Core.xml
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.Data.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.Data.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.Data.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.Printing.v22.1.Core.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.Printing.v22.1.Core.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.Printing.v22.1.Core.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.Sparkline.v22.1.Core.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.Sparkline.v22.1.Core.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.Sparkline.v22.1.Core.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.Utils.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.Utils.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.Utils.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.XtraEditors.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.XtraEditors.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.XtraEditors.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.XtraGrid.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.XtraGrid.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.XtraGrid.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.XtraLayout.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.XtraLayout.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.XtraLayout.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.XtraPrinting.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.XtraPrinting.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.XtraPrinting.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.XtraTreeList.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.XtraTreeList.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.XtraTreeList.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.Pdf.v22.1.Core.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.Pdf.v22.1.Core.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.Pdf.v22.1.Core.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.XtraBars.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.XtraBars.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.XtraBars.v22.1.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.RichEdit.v22.1.Core.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.RichEdit.v22.1.Core.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.RichEdit.v22.1.Core.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.Office.v22.1.Core.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.Office.v22.1.Core.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.Office.v22.1.Core.resources.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.csproj.CopyComplete
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\Newtonsoft.Json.dll
+D:\WorkSpace\TEİAŞ 2021 DİJİTAL ARŞİV PROJESİ\Sources\KodASln\KodA.ArsivNetTransferApp\bin\Debug\Newtonsoft.Json.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\KodA.ArsivNetTransferApp.exe.config
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\KodA.ArsivNetTransferApp.exe
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\KodA.ArsivNetTransferApp.pdb
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Data.Desktop.v22.1.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Data.v22.1.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Drawing.v22.1.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Printing.v22.1.Core.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Sparkline.v22.1.Core.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Utils.v22.1.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraEditors.v22.1.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraGrid.v22.1.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraLayout.v22.1.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraPrinting.v22.1.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\KodA.Business.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\KodA.DataAccessLayer.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\KodA.FileProvider.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\KodA.Forms.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\KodA.Types.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\Newtonsoft.Json.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Pdf.v22.1.Core.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Pdf.v22.1.Drawing.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraBars.v22.1.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.RichEdit.v22.1.Core.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraTreeList.v22.1.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\BCrypt.Net.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Office.v22.1.Core.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Data.Desktop.v22.1.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Data.v22.1.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Printing.v22.1.Core.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Sparkline.v22.1.Core.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Utils.v22.1.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraEditors.v22.1.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraGrid.v22.1.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraLayout.v22.1.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraPrinting.v22.1.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\KodA.Business.pdb
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\KodA.DataAccessLayer.pdb
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\KodA.FileProvider.pdb
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\KodA.Forms.pdb
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\KodA.Types.pdb
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Pdf.v22.1.Core.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Pdf.v22.1.Drawing.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraBars.v22.1.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.RichEdit.v22.1.Core.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.XtraTreeList.v22.1.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\BCrypt.Net.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\DevExpress.Office.v22.1.Core.xml
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.Data.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.Data.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.Data.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.Printing.v22.1.Core.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.Printing.v22.1.Core.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.Printing.v22.1.Core.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.Sparkline.v22.1.Core.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.Sparkline.v22.1.Core.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.Sparkline.v22.1.Core.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.Utils.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.Utils.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.Utils.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.XtraEditors.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.XtraEditors.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.XtraEditors.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.XtraGrid.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.XtraGrid.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.XtraGrid.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.XtraLayout.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.XtraLayout.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.XtraLayout.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.XtraPrinting.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.XtraPrinting.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.XtraPrinting.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.Pdf.v22.1.Core.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.Pdf.v22.1.Core.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.Pdf.v22.1.Core.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.XtraBars.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.XtraBars.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.XtraBars.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.RichEdit.v22.1.Core.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.RichEdit.v22.1.Core.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.RichEdit.v22.1.Core.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.XtraTreeList.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.XtraTreeList.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.XtraTreeList.v22.1.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\de\DevExpress.Office.v22.1.Core.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\es\DevExpress.Office.v22.1.Core.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\bin\Debug\ja\DevExpress.Office.v22.1.Core.resources.dll
+D:\Repos\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.csproj.AssemblyReference.cache
+D:\Repos\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.FormMain.resources
+D:\Repos\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.FormSettings.resources
+D:\Repos\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.Properties.Resources.resources
+D:\Repos\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.csproj.GenerateResource.cache
+D:\Repos\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.exe.licenses
+D:\Repos\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.csproj.CoreCompileInputs.cache
+D:\Repos\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.csproj.CopyComplete
+D:\Repos\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.exe
+D:\Repos\KodA.ArsivNetTransferApp\obj\Debug\KodA.ArsivNetTransferApp.pdb
