@@ -319,13 +319,17 @@ namespace KodA.ArsivNetTransferApp
                             sorgulama = true,
                             sorgulamaSpecified = true,
                             yonetim = true,
-                            yonetimSpecified = true
+                            yonetimSpecified = true                            
                         }
                     },
                     kullaniciId = ServiceHelper.wcfLoginResult.kullanici.id,
                     kullaniciIdSpecified = true,
                     varlikId = -1,
-                    varlikIdSpecified = true
+                    varlikIdSpecified = true,
+                    arsivPlaniId = 56,
+                    arsivPlaniIdSpecified = true,
+                    altBirimDahil = true,
+                    altBirimDahilSpecified = true,
                 };
                 bool resultCreateAuth = ServiceHelper.CreateArchiveChildAuth2(dizinUreticiYetkisiGuncelleParametre);
                 return arsivDizini;
@@ -391,9 +395,8 @@ namespace KodA.ArsivNetTransferApp
                 ustveriTanimIdSpecified = true
             };
 
-            parametre.ustveri.ustveri = "{" + parametre.ustveri.ustveri + "}";
             //FileInfo fileInfo = new FileInfo(pdfPath);
-            pdfPath = "";
+            pdfPath = "C:\\Users\\Administrator\\Desktop\\deneme.pdf";
 
             parametre.arsivMalzemesiMTOMDetay = new ArsivMalzemeSvc.arsivMalzemesiDetayEkleMTOMParametre[1]
             {
@@ -485,6 +488,17 @@ namespace KodA.ArsivNetTransferApp
                             fileData[e.GDFieldName] = null;
                         }
                     }
+                    else if (docTypeIndexMap.FieldDataType == EnumFieldDataType.Sayi.GetHashCode() && docTypeIndexMap.tLookUpDataId > 0)
+                    {
+                        if (row[e.SBFieldName] != DBNull.Value)
+                        {
+                            fileData[e.GDFieldName] = row[e.SBFieldName+"_Description"].ToString();
+                        }
+                        else
+                        {
+                            fileData[e.GDFieldName] = null;
+                        }
+                    }
                     else
                     {
                         if (row[e.SBFieldName] != DBNull.Value)
@@ -499,7 +513,9 @@ namespace KodA.ArsivNetTransferApp
                 }
                 else// barkod alanı icin istisna
                 {
-                    if (row["BarcodeValue"] != DBNull.Value)
+                    if (row.Table.Columns.Contains("BarcodeValue"))
+                    {
+                        if (row["BarcodeValue"] != DBNull.Value)
                     {
                         fileData["Barkod"] = row["BarcodeValue"].ToString();
                     }
@@ -507,6 +523,8 @@ namespace KodA.ArsivNetTransferApp
                     {
                         fileData["Barkod"] = null;
                     }
+                    }
+
                 }
             });
             return fileData.ToString();
