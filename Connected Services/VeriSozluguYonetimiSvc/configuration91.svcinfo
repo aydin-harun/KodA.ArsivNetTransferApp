@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="TQ2V+wHmRJyC2MC+eizTBKEDOo5RhsnS2rfkBTxHzLk=">
+<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="R3b+VE9Qcgb89Mb9kmwn6lg7cPVr/rLgmhnf3xHXWf0=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="VeriSozluguYonetimiServiceServiceSoapBinding">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="VeriSozluguYonetimiServicePort" contract="VeriSozluguYonetimiSvc.VeriSozluguYonetimiService" bindingType="basicHttpBinding" address="http://arsivnet.ankara.edu.tr/arsivnet_webservice/api/verisozluguyonetimiservicesoap" bindingConfiguration="VeriSozluguYonetimiServiceServiceSoapBinding">
+    <endpoint name="VeriSozluguYonetimiServicePort" contract="VeriSozluguYonetimiSvc.VeriSozluguYonetimiService" bindingType="basicHttpBinding" address="http://172.28.1.94:8500/arsivnet_webservice/api/verisozluguyonetimiservicesoap" bindingConfiguration="VeriSozluguYonetimiServiceServiceSoapBinding">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://arsivnet.ankara.edu.tr/arsivnet_webservice/api/verisozluguyonetimiservicesoap</serializedValue>
+          <serializedValue>http://172.28.1.94:8500/arsivnet_webservice/api/verisozluguyonetimiservicesoap</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

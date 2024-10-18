@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9718c765-c104-4b76-8848-2f9e46b0250b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="9718c765-c104-4b76-8848-2f9e46b0250b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,10 +19,10 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="https://arsivnet.ankara.edu.tr/arsivnet_webservice/api/kullaniciyonetimiservicesoap?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://172.28.1.94:8500/arsivnet_webservice/api/kullaniciyonetimiservicesoap?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="KullaniciServiceService1.wsdl" MetadataType="Wsdl" ID="c8da3c12-f86c-46e4-add4-3bd179fc605a" SourceId="1" SourceUrl="https://arsivnet.ankara.edu.tr/arsivnet_webservice/api/kullaniciyonetimiservicesoap?wsdl" />
+    <MetadataFile FileName="KullaniciServiceService.wsdl" MetadataType="Wsdl" ID="6beff3c5-963b-4b08-a0ad-59c8a4841e27" SourceId="1" SourceUrl="http://172.28.1.94:8500/arsivnet_webservice/api/kullaniciyonetimiservicesoap?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

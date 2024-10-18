@@ -18,6 +18,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -69,8 +70,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -114,6 +124,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -165,8 +176,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -210,6 +230,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -261,8 +282,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -306,6 +336,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -357,8 +388,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -402,6 +442,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -453,8 +494,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -498,6 +548,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -549,8 +600,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -594,6 +654,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -645,8 +706,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -690,6 +760,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -741,8 +812,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -786,6 +866,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -837,8 +918,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -882,6 +972,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -933,8 +1024,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -978,6 +1078,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -1029,8 +1130,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -1074,6 +1184,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -1125,8 +1236,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -1170,6 +1290,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -1221,8 +1342,229 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(externalKullanicilariListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(externalKullanicilariListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(externalKullanicilariListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkisiKontrolResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkisiKontrol))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciTercihGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciTercihGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKurumLogoListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKurumLogoListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKurumLogoListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciEkleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciEkleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciEkle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkileriniListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkileriniListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkileriniListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getUserLoggedInResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getUserLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciGirisSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciGirisResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciGiris))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiEkleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiEkleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiEkle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullanicilariListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullanicilariListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullanicilariListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiEkleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiEkleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiEkle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(serviceParameter))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListeleResponse1 dizinYonetimYetkiListele(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListele1 request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListeleResponse1> dizinYonetimYetkiListeleAsync(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListele1 request);
+        
+        // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiEkleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiEkleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiEkle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiKaldirSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiKaldirResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiKaldir))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciTercihOkuSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciTercihOkuResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciTercihOku))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(logoutResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(logout))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciAktiflikGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciAktiflikGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciAktiflikGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(mainGroup))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getMenuResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getMenu))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkileriniListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkileriniListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkileriniListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiSilSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiSilResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiSil))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiVerSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiVerResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiVer))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(seciliBirimDegistirResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(seciliBirimDegistir))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiKaldirSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiKaldirResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiKaldir))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(temaDegistirResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(temaDegistir))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiKaldirSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiKaldirResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiKaldir))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(aksiyonKontrolResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(aksiyonKontrol))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getYetkiVermeDurumResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getYetkiVermeDurum))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(externalKullanicilariListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(externalKullanicilariListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(externalKullanicilariListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkisiKontrolResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkisiKontrol))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciTercihGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciTercihGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKurumLogoListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKurumLogoListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKurumLogoListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciEkleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciEkleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciEkle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkileriniListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkileriniListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkileriniListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getUserLoggedInResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getUserLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciGirisSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciGirisResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciGiris))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiEkleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiEkleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiEkle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullanicilariListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullanicilariListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullanicilariListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiEkleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiEkleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiEkle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(serviceParameter))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelleResponse1 dizinYonetimYetkiGuncelle(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelle1 request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelleResponse1> dizinYonetimYetkiGuncelleAsync(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelle1 request);
+        
+        // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiEkleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiEkleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiEkle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiKaldirSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiKaldirResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiKaldir))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciTercihOkuSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciTercihOkuResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciTercihOku))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(logoutResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(logout))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciAktiflikGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciAktiflikGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciAktiflikGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(mainGroup))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getMenuResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getMenu))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkileriniListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkileriniListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkileriniListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiSilSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiSilResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiSil))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiVerSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiVerResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiVer))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(seciliBirimDegistirResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(seciliBirimDegistir))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiKaldirSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiKaldirResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiKaldir))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(temaDegistirResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(temaDegistir))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiKaldirSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiKaldirResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiKaldir))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(aksiyonKontrolResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(aksiyonKontrol))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getYetkiVermeDurumResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getYetkiVermeDurum))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -1266,6 +1608,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -1317,8 +1660,123 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(externalKullanicilariListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(externalKullanicilariListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(externalKullanicilariListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkisiKontrolResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkisiKontrol))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciTercihGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciTercihGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKurumLogoListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKurumLogoListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKurumLogoListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciEkleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciEkleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciEkle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkileriniListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkileriniListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkileriniListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getUserLoggedInResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getUserLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciGirisSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciGirisResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciGiris))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiEkleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiEkleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiEkle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullanicilariListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullanicilariListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullanicilariListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiEkleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiEkleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiEkle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(serviceParameter))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListeleResponse1 dizinYetkiListele(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListele1 request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListeleResponse1> dizinYetkiListeleAsync(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListele1 request);
+        
+        // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiEkleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiEkleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiEkle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiKaldirSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiKaldirResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiKaldir))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciTercihOkuSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciTercihOkuResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciTercihOku))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(logoutResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(logout))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciAktiflikGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciAktiflikGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciAktiflikGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(mainGroup))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getMenuResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getMenu))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkileriniListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkileriniListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkileriniListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiSilSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiSilResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkisiSil))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiVerSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiVerResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciArsivMalzemesiYetkiVer))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(seciliBirimDegistirResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(seciliBirimDegistir))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiKaldirSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiKaldirResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiKaldir))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(temaDegistirResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(temaDegistir))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiKaldirSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiKaldirResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiKaldir))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(aksiyonKontrolResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(aksiyonKontrol))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getYetkiVermeDurumResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(getYetkiVermeDurum))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -1362,6 +1820,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -1413,8 +1872,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -1458,6 +1926,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -1509,8 +1978,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -1554,6 +2032,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -1605,8 +2084,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -1650,6 +2138,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -1701,8 +2190,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -1746,6 +2244,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -1797,8 +2296,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -1842,6 +2350,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -1893,8 +2402,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -1938,6 +2456,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -1989,8 +2508,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -2034,6 +2562,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -2085,8 +2614,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -2130,6 +2668,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -2181,8 +2720,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -2226,6 +2774,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -2277,8 +2826,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -2322,6 +2880,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -2373,8 +2932,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -2418,6 +2986,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -2469,8 +3038,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -2514,6 +3092,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -2565,8 +3144,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -2610,6 +3198,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -2661,8 +3250,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -2706,6 +3304,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -2757,8 +3356,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -2802,6 +3410,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -2853,8 +3462,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -2898,6 +3516,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -2949,8 +3568,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -2994,6 +3622,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(objectFactory))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciKlasorYetkisiGuncelle))]
@@ -3045,8 +3674,17 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinYetkisiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedInResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(isLoggedIn))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiGuncelle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleSonuc))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListeleResponse))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(dizinYonetimYetkiListele))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleSonuc))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleResponse))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(kullaniciDizinUreticiYetkileriniListele))]
@@ -3089,7 +3727,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3270,6 +3908,8 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullaniciDizinYetkisiEkleParametre))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullaniciArsivMalzemesiYetkiKaldirParametre))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiGuncelleParametre))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(agacListeleParametre))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(dizinAgacListeleParametre))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiListeleParametre))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullaniciAktiflikGuncelleParametre))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullaniciArsivMalzemesiYetkileriniListeleParametre))]
@@ -3281,8 +3921,11 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullaniciDizinYetkisiKaldirParametre))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullaniciYetkiDurumParametre))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullaniciDizinYetkisiGuncelleParametre))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(dizinYonetimYetkiGuncelleParametre))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(dizinYonetimYetkiListeleParametre))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullaniciDizinUreticiYetkileriniListeleParametre))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(listServiceNoFilterParametre))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(dizinYetkiListeleParametre))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(listServiceParametre))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(dizinYetkisiKontrolParametre))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullaniciTercihGuncelleParametre))]
@@ -3291,7 +3934,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullaniciDizinUreticiYetkisiEkleParametre))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullanicilariListeleParametre))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullaniciKlasorYetkisiEkleParametre))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3309,7 +3952,25 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class objectFactory : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3355,7 +4016,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3387,7 +4048,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3489,7 +4150,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3499,7 +4160,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(exception))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3531,7 +4192,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3549,7 +4210,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3581,7 +4242,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3786,7 +4447,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3832,7 +4493,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3864,7 +4525,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3896,12 +4557,16 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
     public partial class kullaniciDizinYetkisiEkleParametre : serviceParameter {
+        
+        private bool altDizinDahilField;
+        
+        private bool altDizinDahilFieldSpecified;
         
         private int arsivDiziniIdField;
         
@@ -3937,6 +4602,30 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool altDizinDahil {
+            get {
+                return this.altDizinDahilField;
+            }
+            set {
+                this.altDizinDahilField = value;
+                this.RaisePropertyChanged("altDizinDahil");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool altDizinDahilSpecified {
+            get {
+                return this.altDizinDahilFieldSpecified;
+            }
+            set {
+                this.altDizinDahilFieldSpecified = value;
+                this.RaisePropertyChanged("altDizinDahilSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public int arsivDiziniId {
             get {
                 return this.arsivDiziniIdField;
@@ -3960,7 +4649,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
         public bool ekleyebilir {
             get {
                 return this.ekleyebilirField;
@@ -3984,7 +4673,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         public int gizlilikDerecesiId {
             get {
                 return this.gizlilikDerecesiIdField;
@@ -4008,7 +4697,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
         public bool guncelleyebilir {
             get {
                 return this.guncelleyebilirField;
@@ -4032,7 +4721,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
         public int kullaniciId {
             get {
                 return this.kullaniciIdField;
@@ -4056,7 +4745,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
         public bool okuyabilir {
             get {
                 return this.okuyabilirField;
@@ -4080,7 +4769,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
         public bool silebilir {
             get {
                 return this.silebilirField;
@@ -4104,7 +4793,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
         public int varlikId {
             get {
                 return this.varlikIdField;
@@ -4129,7 +4818,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4175,7 +4864,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4207,7 +4896,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4239,7 +4928,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4332,7 +5021,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4364,7 +5053,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4396,12 +5085,20 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
     public partial class kullaniciDizinVeDizinUreticiYetkisiGuncelleParametre : serviceParameter {
+        
+        private bool altBirimDahilField;
+        
+        private bool altBirimDahilFieldSpecified;
+        
+        private int arsivPlaniIdField;
+        
+        private bool arsivPlaniIdFieldSpecified;
         
         private dizinYetkiParametre[] dizinYetkiListField;
         
@@ -4414,7 +5111,55 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         private bool varlikIdFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("dizinYetkiList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool altBirimDahil {
+            get {
+                return this.altBirimDahilField;
+            }
+            set {
+                this.altBirimDahilField = value;
+                this.RaisePropertyChanged("altBirimDahil");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool altBirimDahilSpecified {
+            get {
+                return this.altBirimDahilFieldSpecified;
+            }
+            set {
+                this.altBirimDahilFieldSpecified = value;
+                this.RaisePropertyChanged("altBirimDahilSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int arsivPlaniId {
+            get {
+                return this.arsivPlaniIdField;
+            }
+            set {
+                this.arsivPlaniIdField = value;
+                this.RaisePropertyChanged("arsivPlaniId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool arsivPlaniIdSpecified {
+            get {
+                return this.arsivPlaniIdFieldSpecified;
+            }
+            set {
+                this.arsivPlaniIdFieldSpecified = value;
+                this.RaisePropertyChanged("arsivPlaniIdSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("dizinYetkiList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=2)]
         public dizinYetkiParametre[] dizinYetkiList {
             get {
                 return this.dizinYetkiListField;
@@ -4426,7 +5171,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         public int kullaniciId {
             get {
                 return this.kullaniciIdField;
@@ -4450,7 +5195,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
         public int varlikId {
             get {
                 return this.varlikIdField;
@@ -4475,7 +5220,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4745,12 +5490,64 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class pGobject : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string typeField;
+        
+        private string valueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+                this.RaisePropertyChanged("type");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+                this.RaisePropertyChanged("value");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
     public partial class kullaniciDizinVeDizinUreticiYetkisiListeleSonuc : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private bool altDizinDahilField;
+        
+        private bool altDizinDahilFieldSpecified;
+        
+        private kullaniciDizinVeDizinUreticiYetkisiListeleSonuc[] childListField;
         
         private bool degistirmeField;
         
@@ -4763,6 +5560,8 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         private bool dizinIdFieldSpecified;
         
         private string dizinKoduField;
+        
+        private pGobject dizinTreePathField;
         
         private bool eklemeField;
         
@@ -4784,12 +5583,48 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         
         private bool sorgulamaFieldSpecified;
         
-        private bool yonetimField;
+        private int ustDizinIdField;
         
-        private bool yonetimFieldSpecified;
+        private bool ustDizinIdFieldSpecified;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool altDizinDahil {
+            get {
+                return this.altDizinDahilField;
+            }
+            set {
+                this.altDizinDahilField = value;
+                this.RaisePropertyChanged("altDizinDahil");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool altDizinDahilSpecified {
+            get {
+                return this.altDizinDahilFieldSpecified;
+            }
+            set {
+                this.altDizinDahilFieldSpecified = value;
+                this.RaisePropertyChanged("altDizinDahilSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("childList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=1)]
+        public kullaniciDizinVeDizinUreticiYetkisiListeleSonuc[] childList {
+            get {
+                return this.childListField;
+            }
+            set {
+                this.childListField = value;
+                this.RaisePropertyChanged("childList");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
         public bool degistirme {
             get {
                 return this.degistirmeField;
@@ -4813,7 +5648,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         public string dizinAdi {
             get {
                 return this.dizinAdiField;
@@ -4825,7 +5660,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
         public int dizinId {
             get {
                 return this.dizinIdField;
@@ -4849,7 +5684,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
         public string dizinKodu {
             get {
                 return this.dizinKoduField;
@@ -4861,7 +5696,19 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public pGobject dizinTreePath {
+            get {
+                return this.dizinTreePathField;
+            }
+            set {
+                this.dizinTreePathField = value;
+                this.RaisePropertyChanged("dizinTreePath");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
         public bool ekleme {
             get {
                 return this.eklemeField;
@@ -4885,7 +5732,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
         public int gizlilikDerecesiId {
             get {
                 return this.gizlilikDerecesiIdField;
@@ -4909,7 +5756,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
         public bool okuma {
             get {
                 return this.okumaField;
@@ -4933,7 +5780,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
         public bool silme {
             get {
                 return this.silmeField;
@@ -4957,7 +5804,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
         public bool sorgulama {
             get {
                 return this.sorgulamaField;
@@ -4981,26 +5828,26 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
-        public bool yonetim {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
+        public int ustDizinId {
             get {
-                return this.yonetimField;
+                return this.ustDizinIdField;
             }
             set {
-                this.yonetimField = value;
-                this.RaisePropertyChanged("yonetim");
+                this.ustDizinIdField = value;
+                this.RaisePropertyChanged("ustDizinId");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool yonetimSpecified {
+        public bool ustDizinIdSpecified {
             get {
-                return this.yonetimFieldSpecified;
+                return this.ustDizinIdFieldSpecified;
             }
             set {
-                this.yonetimFieldSpecified = value;
-                this.RaisePropertyChanged("yonetimSpecified");
+                this.ustDizinIdFieldSpecified = value;
+                this.RaisePropertyChanged("ustDizinIdSpecified");
             }
         }
         
@@ -5015,7 +5862,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5047,7 +5894,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5079,16 +5926,12 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
-    public partial class kullaniciDizinVeDizinUreticiYetkisiListeleParametre : serviceParameter {
-        
-        private int arsivPlaniIdField;
-        
-        private bool arsivPlaniIdFieldSpecified;
+    public partial class kullaniciDizinVeDizinUreticiYetkisiListeleParametre : dizinAgacListeleParametre {
         
         private int dizinIdField;
         
@@ -5104,30 +5947,6 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int arsivPlaniId {
-            get {
-                return this.arsivPlaniIdField;
-            }
-            set {
-                this.arsivPlaniIdField = value;
-                this.RaisePropertyChanged("arsivPlaniId");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool arsivPlaniIdSpecified {
-            get {
-                return this.arsivPlaniIdFieldSpecified;
-            }
-            set {
-                this.arsivPlaniIdFieldSpecified = value;
-                this.RaisePropertyChanged("arsivPlaniIdSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public int dizinId {
             get {
                 return this.dizinIdField;
@@ -5151,7 +5970,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public int kullaniciId {
             get {
                 return this.kullaniciIdField;
@@ -5175,7 +5994,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
         public int varlikId {
             get {
                 return this.varlikIdField;
@@ -5200,7 +6019,228 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiListeleParametre))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class dizinAgacListeleParametre : agacListeleParametre {
+        
+        private int arsivPlaniIdField;
+        
+        private bool arsivPlaniIdFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int arsivPlaniId {
+            get {
+                return this.arsivPlaniIdField;
+            }
+            set {
+                this.arsivPlaniIdField = value;
+                this.RaisePropertyChanged("arsivPlaniId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool arsivPlaniIdSpecified {
+            get {
+                return this.arsivPlaniIdFieldSpecified;
+            }
+            set {
+                this.arsivPlaniIdFieldSpecified = value;
+                this.RaisePropertyChanged("arsivPlaniIdSpecified");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(dizinAgacListeleParametre))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(kullaniciDizinVeDizinUreticiYetkisiListeleParametre))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class agacListeleParametre : serviceParameter {
+        
+        private filterObject[] filterField;
+        
+        private int limitField;
+        
+        private bool limitFieldSpecified;
+        
+        private string nodeField;
+        
+        private string queryField;
+        
+        private int startField;
+        
+        private bool startFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("filter", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
+        public filterObject[] filter {
+            get {
+                return this.filterField;
+            }
+            set {
+                this.filterField = value;
+                this.RaisePropertyChanged("filter");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int limit {
+            get {
+                return this.limitField;
+            }
+            set {
+                this.limitField = value;
+                this.RaisePropertyChanged("limit");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool limitSpecified {
+            get {
+                return this.limitFieldSpecified;
+            }
+            set {
+                this.limitFieldSpecified = value;
+                this.RaisePropertyChanged("limitSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string node {
+            get {
+                return this.nodeField;
+            }
+            set {
+                this.nodeField = value;
+                this.RaisePropertyChanged("node");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string query {
+            get {
+                return this.queryField;
+            }
+            set {
+                this.queryField = value;
+                this.RaisePropertyChanged("query");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public int start {
+            get {
+                return this.startField;
+            }
+            set {
+                this.startField = value;
+                this.RaisePropertyChanged("start");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool startSpecified {
+            get {
+                return this.startFieldSpecified;
+            }
+            set {
+                this.startFieldSpecified = value;
+                this.RaisePropertyChanged("startSpecified");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class filterObject : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string operatorField;
+        
+        private string propertyField;
+        
+        private string valueField;
+        
+        private string value2Field;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string @operator {
+            get {
+                return this.operatorField;
+            }
+            set {
+                this.operatorField = value;
+                this.RaisePropertyChanged("operator");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string property {
+            get {
+                return this.propertyField;
+            }
+            set {
+                this.propertyField = value;
+                this.RaisePropertyChanged("property");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+                this.RaisePropertyChanged("value");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string value2 {
+            get {
+                return this.value2Field;
+            }
+            set {
+                this.value2Field = value;
+                this.RaisePropertyChanged("value2");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5246,7 +6286,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5261,6 +6301,8 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         
         private bool feederFieldSpecified;
         
+        private string goruntuTuruField;
+        
         private int modeField;
         
         private bool modeFieldSpecified;
@@ -5274,6 +6316,10 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         private bool skipBlankPagesField;
         
         private bool skipBlankPagesFieldSpecified;
+        
+        private string tarayiciField;
+        
+        private string varsayilanGoruntuTuruField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
@@ -5325,6 +6371,18 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string goruntuTuru {
+            get {
+                return this.goruntuTuruField;
+            }
+            set {
+                this.goruntuTuruField = value;
+                this.RaisePropertyChanged("goruntuTuru");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         public int mode {
             get {
                 return this.modeField;
@@ -5348,7 +6406,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
         public int resolution {
             get {
                 return this.resolutionField;
@@ -5372,7 +6430,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
         public string scanApi {
             get {
                 return this.scanApiField;
@@ -5384,7 +6442,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
         public bool skipBlankPages {
             get {
                 return this.skipBlankPagesField;
@@ -5407,6 +6465,30 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
             }
         }
         
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string tarayici {
+            get {
+                return this.tarayiciField;
+            }
+            set {
+                this.tarayiciField = value;
+                this.RaisePropertyChanged("tarayici");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public string varsayilanGoruntuTuru {
+            get {
+                return this.varsayilanGoruntuTuruField;
+            }
+            set {
+                this.varsayilanGoruntuTuruField = value;
+                this.RaisePropertyChanged("varsayilanGoruntuTuru");
+            }
+        }
+        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -5418,7 +6500,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5450,7 +6532,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5468,7 +6550,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5500,7 +6582,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5518,7 +6600,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5564,7 +6646,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5596,7 +6678,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5628,7 +6710,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5679,7 +6761,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5753,7 +6835,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5799,7 +6881,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5845,7 +6927,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5877,7 +6959,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5895,7 +6977,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6277,7 +7359,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6309,7 +7391,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6341,7 +7423,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6532,81 +7614,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
-    public partial class filterObject : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string operatorField;
-        
-        private string propertyField;
-        
-        private string valueField;
-        
-        private string value2Field;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string @operator {
-            get {
-                return this.operatorField;
-            }
-            set {
-                this.operatorField = value;
-                this.RaisePropertyChanged("operator");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string property {
-            get {
-                return this.propertyField;
-            }
-            set {
-                this.propertyField = value;
-                this.RaisePropertyChanged("property");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-                this.RaisePropertyChanged("value");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string value2 {
-            get {
-                return this.value2Field;
-            }
-            set {
-                this.value2Field = value;
-                this.RaisePropertyChanged("value2");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6652,7 +7660,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6698,7 +7706,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6730,7 +7738,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6762,7 +7770,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6855,7 +7863,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6901,7 +7909,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6933,7 +7941,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6965,7 +7973,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7086,7 +8094,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7118,7 +8126,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7150,7 +8158,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7187,7 +8195,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7233,7 +8241,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7265,7 +8273,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7297,7 +8305,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7390,7 +8398,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7422,7 +8430,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7454,7 +8462,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7477,7 +8485,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7523,7 +8531,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7555,7 +8563,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7587,7 +8595,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7680,7 +8688,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7712,7 +8720,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7744,7 +8752,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7776,7 +8784,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7808,7 +8816,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7873,7 +8881,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7919,7 +8927,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7951,7 +8959,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7983,7 +8991,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8076,7 +9084,580 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class dizinYetkiListeleSonuc : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private bool altDizinDahilField;
+        
+        private bool altDizinDahilFieldSpecified;
+        
+        private bool degistirmeField;
+        
+        private bool degistirmeFieldSpecified;
+        
+        private string dizinAdiField;
+        
+        private int dizinIdField;
+        
+        private bool dizinIdFieldSpecified;
+        
+        private bool eklemeField;
+        
+        private bool eklemeFieldSpecified;
+        
+        private int gizlilikDerecesiIdField;
+        
+        private bool gizlilikDerecesiIdFieldSpecified;
+        
+        private bool okumaField;
+        
+        private bool okumaFieldSpecified;
+        
+        private bool silmeField;
+        
+        private bool silmeFieldSpecified;
+        
+        private bool sorgulamaField;
+        
+        private bool sorgulamaFieldSpecified;
+        
+        private string treePathField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool altDizinDahil {
+            get {
+                return this.altDizinDahilField;
+            }
+            set {
+                this.altDizinDahilField = value;
+                this.RaisePropertyChanged("altDizinDahil");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool altDizinDahilSpecified {
+            get {
+                return this.altDizinDahilFieldSpecified;
+            }
+            set {
+                this.altDizinDahilFieldSpecified = value;
+                this.RaisePropertyChanged("altDizinDahilSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public bool degistirme {
+            get {
+                return this.degistirmeField;
+            }
+            set {
+                this.degistirmeField = value;
+                this.RaisePropertyChanged("degistirme");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool degistirmeSpecified {
+            get {
+                return this.degistirmeFieldSpecified;
+            }
+            set {
+                this.degistirmeFieldSpecified = value;
+                this.RaisePropertyChanged("degistirmeSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string dizinAdi {
+            get {
+                return this.dizinAdiField;
+            }
+            set {
+                this.dizinAdiField = value;
+                this.RaisePropertyChanged("dizinAdi");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public int dizinId {
+            get {
+                return this.dizinIdField;
+            }
+            set {
+                this.dizinIdField = value;
+                this.RaisePropertyChanged("dizinId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool dizinIdSpecified {
+            get {
+                return this.dizinIdFieldSpecified;
+            }
+            set {
+                this.dizinIdFieldSpecified = value;
+                this.RaisePropertyChanged("dizinIdSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public bool ekleme {
+            get {
+                return this.eklemeField;
+            }
+            set {
+                this.eklemeField = value;
+                this.RaisePropertyChanged("ekleme");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool eklemeSpecified {
+            get {
+                return this.eklemeFieldSpecified;
+            }
+            set {
+                this.eklemeFieldSpecified = value;
+                this.RaisePropertyChanged("eklemeSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public int gizlilikDerecesiId {
+            get {
+                return this.gizlilikDerecesiIdField;
+            }
+            set {
+                this.gizlilikDerecesiIdField = value;
+                this.RaisePropertyChanged("gizlilikDerecesiId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool gizlilikDerecesiIdSpecified {
+            get {
+                return this.gizlilikDerecesiIdFieldSpecified;
+            }
+            set {
+                this.gizlilikDerecesiIdFieldSpecified = value;
+                this.RaisePropertyChanged("gizlilikDerecesiIdSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public bool okuma {
+            get {
+                return this.okumaField;
+            }
+            set {
+                this.okumaField = value;
+                this.RaisePropertyChanged("okuma");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool okumaSpecified {
+            get {
+                return this.okumaFieldSpecified;
+            }
+            set {
+                this.okumaFieldSpecified = value;
+                this.RaisePropertyChanged("okumaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public bool silme {
+            get {
+                return this.silmeField;
+            }
+            set {
+                this.silmeField = value;
+                this.RaisePropertyChanged("silme");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool silmeSpecified {
+            get {
+                return this.silmeFieldSpecified;
+            }
+            set {
+                this.silmeFieldSpecified = value;
+                this.RaisePropertyChanged("silmeSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public bool sorgulama {
+            get {
+                return this.sorgulamaField;
+            }
+            set {
+                this.sorgulamaField = value;
+                this.RaisePropertyChanged("sorgulama");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool sorgulamaSpecified {
+            get {
+                return this.sorgulamaFieldSpecified;
+            }
+            set {
+                this.sorgulamaFieldSpecified = value;
+                this.RaisePropertyChanged("sorgulamaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        public string treePath {
+            get {
+                return this.treePathField;
+            }
+            set {
+                this.treePathField = value;
+                this.RaisePropertyChanged("treePath");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class dizinYetkiListeleResponse : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private serviceResult returnField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public serviceResult @return {
+            get {
+                return this.returnField;
+            }
+            set {
+                this.returnField = value;
+                this.RaisePropertyChanged("return");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class dizinYetkiListele : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private dizinYetkiListeleParametre arg0Field;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public dizinYetkiListeleParametre arg0 {
+            get {
+                return this.arg0Field;
+            }
+            set {
+                this.arg0Field = value;
+                this.RaisePropertyChanged("arg0");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class dizinYetkiListeleParametre : listServiceNoFilterParametre {
+        
+        private int birimIdField;
+        
+        private bool birimIdFieldSpecified;
+        
+        private int kullaniciIdField;
+        
+        private bool kullaniciIdFieldSpecified;
+        
+        private int planIdField;
+        
+        private bool planIdFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int birimId {
+            get {
+                return this.birimIdField;
+            }
+            set {
+                this.birimIdField = value;
+                this.RaisePropertyChanged("birimId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool birimIdSpecified {
+            get {
+                return this.birimIdFieldSpecified;
+            }
+            set {
+                this.birimIdFieldSpecified = value;
+                this.RaisePropertyChanged("birimIdSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int kullaniciId {
+            get {
+                return this.kullaniciIdField;
+            }
+            set {
+                this.kullaniciIdField = value;
+                this.RaisePropertyChanged("kullaniciId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool kullaniciIdSpecified {
+            get {
+                return this.kullaniciIdFieldSpecified;
+            }
+            set {
+                this.kullaniciIdFieldSpecified = value;
+                this.RaisePropertyChanged("kullaniciIdSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int planId {
+            get {
+                return this.planIdField;
+            }
+            set {
+                this.planIdField = value;
+                this.RaisePropertyChanged("planId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool planIdSpecified {
+            get {
+                return this.planIdFieldSpecified;
+            }
+            set {
+                this.planIdFieldSpecified = value;
+                this.RaisePropertyChanged("planIdSpecified");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(dizinYetkiListeleParametre))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(listServiceParametre))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class listServiceNoFilterParametre : serviceParameter {
+        
+        private int limitField;
+        
+        private bool limitFieldSpecified;
+        
+        private int pageField;
+        
+        private bool pageFieldSpecified;
+        
+        private string queryField;
+        
+        private sortObject[] sortField;
+        
+        private int startField;
+        
+        private bool startFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int limit {
+            get {
+                return this.limitField;
+            }
+            set {
+                this.limitField = value;
+                this.RaisePropertyChanged("limit");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool limitSpecified {
+            get {
+                return this.limitFieldSpecified;
+            }
+            set {
+                this.limitFieldSpecified = value;
+                this.RaisePropertyChanged("limitSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int page {
+            get {
+                return this.pageField;
+            }
+            set {
+                this.pageField = value;
+                this.RaisePropertyChanged("page");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool pageSpecified {
+            get {
+                return this.pageFieldSpecified;
+            }
+            set {
+                this.pageFieldSpecified = value;
+                this.RaisePropertyChanged("pageSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string query {
+            get {
+                return this.queryField;
+            }
+            set {
+                this.queryField = value;
+                this.RaisePropertyChanged("query");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("sort", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=3)]
+        public sortObject[] sort {
+            get {
+                return this.sortField;
+            }
+            set {
+                this.sortField = value;
+                this.RaisePropertyChanged("sort");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public int start {
+            get {
+                return this.startField;
+            }
+            set {
+                this.startField = value;
+                this.RaisePropertyChanged("start");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool startSpecified {
+            get {
+                return this.startFieldSpecified;
+            }
+            set {
+                this.startFieldSpecified = value;
+                this.RaisePropertyChanged("startSpecified");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class listServiceParametre : listServiceNoFilterParametre {
+        
+        private filterObject[] filterField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("filter", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
+        public filterObject[] filter {
+            get {
+                return this.filterField;
+            }
+            set {
+                this.filterField = value;
+                this.RaisePropertyChanged("filter");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8122,7 +9703,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8140,7 +9721,627 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class dizinYonetimYetkiGuncelleSonuc : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private bool altDizinDahilField;
+        
+        private bool altDizinDahilFieldSpecified;
+        
+        private int dizinIdField;
+        
+        private bool dizinIdFieldSpecified;
+        
+        private bool yonetimField;
+        
+        private bool yonetimFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool altDizinDahil {
+            get {
+                return this.altDizinDahilField;
+            }
+            set {
+                this.altDizinDahilField = value;
+                this.RaisePropertyChanged("altDizinDahil");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool altDizinDahilSpecified {
+            get {
+                return this.altDizinDahilFieldSpecified;
+            }
+            set {
+                this.altDizinDahilFieldSpecified = value;
+                this.RaisePropertyChanged("altDizinDahilSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int dizinId {
+            get {
+                return this.dizinIdField;
+            }
+            set {
+                this.dizinIdField = value;
+                this.RaisePropertyChanged("dizinId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool dizinIdSpecified {
+            get {
+                return this.dizinIdFieldSpecified;
+            }
+            set {
+                this.dizinIdFieldSpecified = value;
+                this.RaisePropertyChanged("dizinIdSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public bool yonetim {
+            get {
+                return this.yonetimField;
+            }
+            set {
+                this.yonetimField = value;
+                this.RaisePropertyChanged("yonetim");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool yonetimSpecified {
+            get {
+                return this.yonetimFieldSpecified;
+            }
+            set {
+                this.yonetimFieldSpecified = value;
+                this.RaisePropertyChanged("yonetimSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class dizinYonetimYetkiGuncelleResponse : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private serviceResult returnField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public serviceResult @return {
+            get {
+                return this.returnField;
+            }
+            set {
+                this.returnField = value;
+                this.RaisePropertyChanged("return");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class dizinYonetimYetkiGuncelle : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private dizinYonetimYetkiGuncelleParametre arg0Field;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public dizinYonetimYetkiGuncelleParametre arg0 {
+            get {
+                return this.arg0Field;
+            }
+            set {
+                this.arg0Field = value;
+                this.RaisePropertyChanged("arg0");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class dizinYonetimYetkiGuncelleParametre : serviceParameter {
+        
+        private int arsivPlaniIdField;
+        
+        private bool arsivPlaniIdFieldSpecified;
+        
+        private dizinYonetimYetkiParametre[] dizinYonetimYetkiListField;
+        
+        private int kullaniciIdField;
+        
+        private bool kullaniciIdFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int arsivPlaniId {
+            get {
+                return this.arsivPlaniIdField;
+            }
+            set {
+                this.arsivPlaniIdField = value;
+                this.RaisePropertyChanged("arsivPlaniId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool arsivPlaniIdSpecified {
+            get {
+                return this.arsivPlaniIdFieldSpecified;
+            }
+            set {
+                this.arsivPlaniIdFieldSpecified = value;
+                this.RaisePropertyChanged("arsivPlaniIdSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("dizinYonetimYetkiList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=1)]
+        public dizinYonetimYetkiParametre[] dizinYonetimYetkiList {
+            get {
+                return this.dizinYonetimYetkiListField;
+            }
+            set {
+                this.dizinYonetimYetkiListField = value;
+                this.RaisePropertyChanged("dizinYonetimYetkiList");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int kullaniciId {
+            get {
+                return this.kullaniciIdField;
+            }
+            set {
+                this.kullaniciIdField = value;
+                this.RaisePropertyChanged("kullaniciId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool kullaniciIdSpecified {
+            get {
+                return this.kullaniciIdFieldSpecified;
+            }
+            set {
+                this.kullaniciIdFieldSpecified = value;
+                this.RaisePropertyChanged("kullaniciIdSpecified");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class dizinYonetimYetkiParametre : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private bool altDizinlerDahilField;
+        
+        private bool altDizinlerDahilFieldSpecified;
+        
+        private int dizinIdField;
+        
+        private bool dizinIdFieldSpecified;
+        
+        private bool yonetimField;
+        
+        private bool yonetimFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool altDizinlerDahil {
+            get {
+                return this.altDizinlerDahilField;
+            }
+            set {
+                this.altDizinlerDahilField = value;
+                this.RaisePropertyChanged("altDizinlerDahil");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool altDizinlerDahilSpecified {
+            get {
+                return this.altDizinlerDahilFieldSpecified;
+            }
+            set {
+                this.altDizinlerDahilFieldSpecified = value;
+                this.RaisePropertyChanged("altDizinlerDahilSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int dizinId {
+            get {
+                return this.dizinIdField;
+            }
+            set {
+                this.dizinIdField = value;
+                this.RaisePropertyChanged("dizinId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool dizinIdSpecified {
+            get {
+                return this.dizinIdFieldSpecified;
+            }
+            set {
+                this.dizinIdFieldSpecified = value;
+                this.RaisePropertyChanged("dizinIdSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public bool yonetim {
+            get {
+                return this.yonetimField;
+            }
+            set {
+                this.yonetimField = value;
+                this.RaisePropertyChanged("yonetim");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool yonetimSpecified {
+            get {
+                return this.yonetimFieldSpecified;
+            }
+            set {
+                this.yonetimFieldSpecified = value;
+                this.RaisePropertyChanged("yonetimSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class dizinYonetimYetkiListeleSonuc : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private bool altDizinDahilField;
+        
+        private bool altDizinDahilFieldSpecified;
+        
+        private string dizinAdiField;
+        
+        private string dizinKoduField;
+        
+        private int idField;
+        
+        private bool idFieldSpecified;
+        
+        private string treePathField;
+        
+        private bool yonetimField;
+        
+        private bool yonetimFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool altDizinDahil {
+            get {
+                return this.altDizinDahilField;
+            }
+            set {
+                this.altDizinDahilField = value;
+                this.RaisePropertyChanged("altDizinDahil");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool altDizinDahilSpecified {
+            get {
+                return this.altDizinDahilFieldSpecified;
+            }
+            set {
+                this.altDizinDahilFieldSpecified = value;
+                this.RaisePropertyChanged("altDizinDahilSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string dizinAdi {
+            get {
+                return this.dizinAdiField;
+            }
+            set {
+                this.dizinAdiField = value;
+                this.RaisePropertyChanged("dizinAdi");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string dizinKodu {
+            get {
+                return this.dizinKoduField;
+            }
+            set {
+                this.dizinKoduField = value;
+                this.RaisePropertyChanged("dizinKodu");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public int id {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+                this.RaisePropertyChanged("id");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idSpecified {
+            get {
+                return this.idFieldSpecified;
+            }
+            set {
+                this.idFieldSpecified = value;
+                this.RaisePropertyChanged("idSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string treePath {
+            get {
+                return this.treePathField;
+            }
+            set {
+                this.treePathField = value;
+                this.RaisePropertyChanged("treePath");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public bool yonetim {
+            get {
+                return this.yonetimField;
+            }
+            set {
+                this.yonetimField = value;
+                this.RaisePropertyChanged("yonetim");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool yonetimSpecified {
+            get {
+                return this.yonetimFieldSpecified;
+            }
+            set {
+                this.yonetimFieldSpecified = value;
+                this.RaisePropertyChanged("yonetimSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class dizinYonetimYetkiListeleResponse : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private serviceResult returnField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public serviceResult @return {
+            get {
+                return this.returnField;
+            }
+            set {
+                this.returnField = value;
+                this.RaisePropertyChanged("return");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class dizinYonetimYetkiListele : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private dizinYonetimYetkiListeleParametre arg0Field;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public dizinYonetimYetkiListeleParametre arg0 {
+            get {
+                return this.arg0Field;
+            }
+            set {
+                this.arg0Field = value;
+                this.RaisePropertyChanged("arg0");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
+    public partial class dizinYonetimYetkiListeleParametre : serviceParameter {
+        
+        private int arsivPlaniIdField;
+        
+        private bool arsivPlaniIdFieldSpecified;
+        
+        private int kullaniciIdField;
+        
+        private bool kullaniciIdFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int arsivPlaniId {
+            get {
+                return this.arsivPlaniIdField;
+            }
+            set {
+                this.arsivPlaniIdField = value;
+                this.RaisePropertyChanged("arsivPlaniId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool arsivPlaniIdSpecified {
+            get {
+                return this.arsivPlaniIdFieldSpecified;
+            }
+            set {
+                this.arsivPlaniIdFieldSpecified = value;
+                this.RaisePropertyChanged("arsivPlaniIdSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int kullaniciId {
+            get {
+                return this.kullaniciIdField;
+            }
+            set {
+                this.kullaniciIdField = value;
+                this.RaisePropertyChanged("kullaniciId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool kullaniciIdSpecified {
+            get {
+                return this.kullaniciIdFieldSpecified;
+            }
+            set {
+                this.kullaniciIdFieldSpecified = value;
+                this.RaisePropertyChanged("kullaniciIdSpecified");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8312,7 +10513,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8344,7 +10545,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8376,7 +10577,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8413,7 +10614,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8529,7 +10730,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8603,7 +10804,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8635,7 +10836,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8667,152 +10868,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
-    public partial class listServiceParametre : listServiceNoFilterParametre {
-        
-        private filterObject[] filterField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("filter", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
-        public filterObject[] filter {
-            get {
-                return this.filterField;
-            }
-            set {
-                this.filterField = value;
-                this.RaisePropertyChanged("filter");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(listServiceParametre))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
-    public partial class listServiceNoFilterParametre : serviceParameter {
-        
-        private int limitField;
-        
-        private bool limitFieldSpecified;
-        
-        private int pageField;
-        
-        private bool pageFieldSpecified;
-        
-        private string queryField;
-        
-        private sortObject[] sortField;
-        
-        private int startField;
-        
-        private bool startFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int limit {
-            get {
-                return this.limitField;
-            }
-            set {
-                this.limitField = value;
-                this.RaisePropertyChanged("limit");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool limitSpecified {
-            get {
-                return this.limitFieldSpecified;
-            }
-            set {
-                this.limitFieldSpecified = value;
-                this.RaisePropertyChanged("limitSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int page {
-            get {
-                return this.pageField;
-            }
-            set {
-                this.pageField = value;
-                this.RaisePropertyChanged("page");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool pageSpecified {
-            get {
-                return this.pageFieldSpecified;
-            }
-            set {
-                this.pageFieldSpecified = value;
-                this.RaisePropertyChanged("pageSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string query {
-            get {
-                return this.queryField;
-            }
-            set {
-                this.queryField = value;
-                this.RaisePropertyChanged("query");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("sort", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=3)]
-        public sortObject[] sort {
-            get {
-                return this.sortField;
-            }
-            set {
-                this.sortField = value;
-                this.RaisePropertyChanged("sort");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public int start {
-            get {
-                return this.startField;
-            }
-            set {
-                this.startField = value;
-                this.RaisePropertyChanged("start");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool startSpecified {
-            get {
-                return this.startFieldSpecified;
-            }
-            set {
-                this.startFieldSpecified = value;
-                this.RaisePropertyChanged("startSpecified");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8844,7 +10900,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8876,7 +10932,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8969,7 +11025,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
     public enum islemTipiEnum {
@@ -8991,7 +11047,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9023,7 +11079,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9055,7 +11111,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9092,7 +11148,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9194,7 +11250,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9226,7 +11282,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9244,7 +11300,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9290,7 +11346,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9322,7 +11378,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9354,7 +11410,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9374,6 +11430,8 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         private long sonLoginBirimIdField;
         
         private bool sonLoginBirimIdFieldSpecified;
+        
+        private string tcKimlikNoField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
@@ -9458,10 +11516,22 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
                 this.RaisePropertyChanged("sonLoginBirimIdSpecified");
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string tcKimlikNo {
+            get {
+                return this.tcKimlikNoField;
+            }
+            set {
+                this.tcKimlikNoField = value;
+                this.RaisePropertyChanged("tcKimlikNo");
+            }
+        }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9577,7 +11647,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9609,7 +11679,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9641,7 +11711,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9790,7 +11860,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9822,7 +11892,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9840,7 +11910,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10194,7 +12264,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10394,7 +12464,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10440,6 +12510,10 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         private bool senkronizeEdilemeyenBirimSayisiFieldSpecified;
         
         private bool superUserField;
+        
+        private string tcKimlikNoField;
+        
+        private bool tokenAuthenticatedField;
         
         private string yetkiProfiliField;
         
@@ -10685,6 +12759,30 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
+        public string tcKimlikNo {
+            get {
+                return this.tcKimlikNoField;
+            }
+            set {
+                this.tcKimlikNoField = value;
+                this.RaisePropertyChanged("tcKimlikNo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
+        public bool tokenAuthenticated {
+            get {
+                return this.tokenAuthenticatedField;
+            }
+            set {
+                this.tokenAuthenticatedField = value;
+                this.RaisePropertyChanged("tokenAuthenticated");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
         public string yetkiProfili {
             get {
                 return this.yetkiProfiliField;
@@ -10706,7 +12804,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10766,7 +12864,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10798,7 +12896,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10816,7 +12914,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10862,7 +12960,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10894,7 +12992,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10926,7 +13024,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11131,12 +13229,14 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
     public partial class kullanicilariListeleSonuc : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string adSoyadField;
         
         private string birimAdiField;
         
@@ -11158,8 +13258,22 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         
         private string kullaniciAdiField;
         
+        private string tcKimlikNoField;
+        
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string adSoyad {
+            get {
+                return this.adSoyadField;
+            }
+            set {
+                this.adSoyadField = value;
+                this.RaisePropertyChanged("adSoyad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public string birimAdi {
             get {
                 return this.birimAdiField;
@@ -11171,7 +13285,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
         public System.DateTime gecerlilikBaslangicZamani {
             get {
                 return this.gecerlilikBaslangicZamaniField;
@@ -11195,7 +13309,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         public System.DateTime gecerlilikBitisZamani {
             get {
                 return this.gecerlilikBitisZamaniField;
@@ -11219,7 +13333,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
         public System.DateTime guncellenmeZamani {
             get {
                 return this.guncellenmeZamaniField;
@@ -11243,7 +13357,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
         public int id {
             get {
                 return this.idField;
@@ -11267,7 +13381,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
         public string kullaniciAdi {
             get {
                 return this.kullaniciAdiField;
@@ -11275,6 +13389,18 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
             set {
                 this.kullaniciAdiField = value;
                 this.RaisePropertyChanged("kullaniciAdi");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string tcKimlikNo {
+            get {
+                return this.tcKimlikNoField;
+            }
+            set {
+                this.tcKimlikNoField = value;
+                this.RaisePropertyChanged("tcKimlikNo");
             }
         }
         
@@ -11289,7 +13415,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11321,7 +13447,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11353,12 +13479,14 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
     public partial class kullanicilariListeleParametre : serviceParameter {
+        
+        private string adSoyadField;
         
         private blokeDurumEnum blokeDurumuField;
         
@@ -11388,8 +13516,22 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         
         private bool startFieldSpecified;
         
+        private string tcKimlikNoField;
+        
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string adSoyad {
+            get {
+                return this.adSoyadField;
+            }
+            set {
+                this.adSoyadField = value;
+                this.RaisePropertyChanged("adSoyad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public blokeDurumEnum blokeDurumu {
             get {
                 return this.blokeDurumuField;
@@ -11413,7 +13555,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("filter", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("filter", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=2)]
         public filterObject[] filter {
             get {
                 return this.filterField;
@@ -11425,7 +13567,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
         public gecerlilikDurumuEnum gecerlilikDurumu {
             get {
                 return this.gecerlilikDurumuField;
@@ -11449,7 +13591,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
         public string kullaniciAdi {
             get {
                 return this.kullaniciAdiField;
@@ -11461,7 +13603,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
         public int limit {
             get {
                 return this.limitField;
@@ -11485,7 +13627,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
         public int page {
             get {
                 return this.pageField;
@@ -11509,7 +13651,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
         public string query {
             get {
                 return this.queryField;
@@ -11521,7 +13663,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("sort", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute("sort", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=8)]
         public sortObject[] sort {
             get {
                 return this.sortField;
@@ -11533,7 +13675,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
         public int start {
             get {
                 return this.startField;
@@ -11555,10 +13697,22 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
                 this.RaisePropertyChanged("startSpecified");
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        public string tcKimlikNo {
+            get {
+                return this.tcKimlikNoField;
+            }
+            set {
+                this.tcKimlikNoField = value;
+                this.RaisePropertyChanged("tcKimlikNo");
+            }
+        }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
     public enum blokeDurumEnum {
@@ -11574,7 +13728,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/")]
     public enum gecerlilikDurumuEnum {
@@ -11590,7 +13744,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11636,7 +13790,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11668,7 +13822,7 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3761.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -12110,6 +14264,78 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="dizinYonetimYetkiListele", WrapperNamespace="http://webservices.arsivnet.turksat.com.tr/", IsWrapped=true)]
+    public partial class dizinYonetimYetkiListele1 {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListeleParametre arg0;
+        
+        public dizinYonetimYetkiListele1() {
+        }
+        
+        public dizinYonetimYetkiListele1(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListeleParametre arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="dizinYonetimYetkiListeleResponse", WrapperNamespace="http://webservices.arsivnet.turksat.com.tr/", IsWrapped=true)]
+    public partial class dizinYonetimYetkiListeleResponse1 {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public KodA.ArsivNetTransferApp.KullaniciSvc.serviceResult @return;
+        
+        public dizinYonetimYetkiListeleResponse1() {
+        }
+        
+        public dizinYonetimYetkiListeleResponse1(KodA.ArsivNetTransferApp.KullaniciSvc.serviceResult @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="dizinYonetimYetkiGuncelle", WrapperNamespace="http://webservices.arsivnet.turksat.com.tr/", IsWrapped=true)]
+    public partial class dizinYonetimYetkiGuncelle1 {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelleParametre arg0;
+        
+        public dizinYonetimYetkiGuncelle1() {
+        }
+        
+        public dizinYonetimYetkiGuncelle1(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelleParametre arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="dizinYonetimYetkiGuncelleResponse", WrapperNamespace="http://webservices.arsivnet.turksat.com.tr/", IsWrapped=true)]
+    public partial class dizinYonetimYetkiGuncelleResponse1 {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public KodA.ArsivNetTransferApp.KullaniciSvc.serviceResult @return;
+        
+        public dizinYonetimYetkiGuncelleResponse1() {
+        }
+        
+        public dizinYonetimYetkiGuncelleResponse1(KodA.ArsivNetTransferApp.KullaniciSvc.serviceResult @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="isLoggedIn", WrapperNamespace="http://webservices.arsivnet.turksat.com.tr/", IsWrapped=true)]
     public partial class isLoggedIn1 {
         
@@ -12131,6 +14357,42 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         public isLoggedInResponse1(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="dizinYetkiListele", WrapperNamespace="http://webservices.arsivnet.turksat.com.tr/", IsWrapped=true)]
+    public partial class dizinYetkiListele1 {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListeleParametre arg0;
+        
+        public dizinYetkiListele1() {
+        }
+        
+        public dizinYetkiListele1(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListeleParametre arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="dizinYetkiListeleResponse", WrapperNamespace="http://webservices.arsivnet.turksat.com.tr/", IsWrapped=true)]
+    public partial class dizinYetkiListeleResponse1 {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://webservices.arsivnet.turksat.com.tr/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public KodA.ArsivNetTransferApp.KullaniciSvc.serviceResult @return;
+        
+        public dizinYetkiListeleResponse1() {
+        }
+        
+        public dizinYetkiListeleResponse1(KodA.ArsivNetTransferApp.KullaniciSvc.serviceResult @return) {
             this.@return = @return;
         }
     }
@@ -13093,6 +15355,52 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListeleResponse1 KodA.ArsivNetTransferApp.KullaniciSvc.KullaniciService.dizinYonetimYetkiListele(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListele1 request) {
+            return base.Channel.dizinYonetimYetkiListele(request);
+        }
+        
+        public KodA.ArsivNetTransferApp.KullaniciSvc.serviceResult dizinYonetimYetkiListele(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListeleParametre arg0) {
+            KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListele1 inValue = new KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListele1();
+            inValue.arg0 = arg0;
+            KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListeleResponse1 retVal = ((KodA.ArsivNetTransferApp.KullaniciSvc.KullaniciService)(this)).dizinYonetimYetkiListele(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListeleResponse1> KodA.ArsivNetTransferApp.KullaniciSvc.KullaniciService.dizinYonetimYetkiListeleAsync(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListele1 request) {
+            return base.Channel.dizinYonetimYetkiListeleAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListeleResponse1> dizinYonetimYetkiListeleAsync(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListeleParametre arg0) {
+            KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListele1 inValue = new KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiListele1();
+            inValue.arg0 = arg0;
+            return ((KodA.ArsivNetTransferApp.KullaniciSvc.KullaniciService)(this)).dizinYonetimYetkiListeleAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelleResponse1 KodA.ArsivNetTransferApp.KullaniciSvc.KullaniciService.dizinYonetimYetkiGuncelle(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelle1 request) {
+            return base.Channel.dizinYonetimYetkiGuncelle(request);
+        }
+        
+        public KodA.ArsivNetTransferApp.KullaniciSvc.serviceResult dizinYonetimYetkiGuncelle(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelleParametre arg0) {
+            KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelle1 inValue = new KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelle1();
+            inValue.arg0 = arg0;
+            KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelleResponse1 retVal = ((KodA.ArsivNetTransferApp.KullaniciSvc.KullaniciService)(this)).dizinYonetimYetkiGuncelle(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelleResponse1> KodA.ArsivNetTransferApp.KullaniciSvc.KullaniciService.dizinYonetimYetkiGuncelleAsync(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelle1 request) {
+            return base.Channel.dizinYonetimYetkiGuncelleAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelleResponse1> dizinYonetimYetkiGuncelleAsync(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelleParametre arg0) {
+            KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelle1 inValue = new KodA.ArsivNetTransferApp.KullaniciSvc.dizinYonetimYetkiGuncelle1();
+            inValue.arg0 = arg0;
+            return ((KodA.ArsivNetTransferApp.KullaniciSvc.KullaniciService)(this)).dizinYonetimYetkiGuncelleAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         KodA.ArsivNetTransferApp.KullaniciSvc.isLoggedInResponse1 KodA.ArsivNetTransferApp.KullaniciSvc.KullaniciService.isLoggedIn(KodA.ArsivNetTransferApp.KullaniciSvc.isLoggedIn1 request) {
             return base.Channel.isLoggedIn(request);
         }
@@ -13111,6 +15419,29 @@ namespace KodA.ArsivNetTransferApp.KullaniciSvc {
         public System.Threading.Tasks.Task<KodA.ArsivNetTransferApp.KullaniciSvc.isLoggedInResponse1> isLoggedInAsync() {
             KodA.ArsivNetTransferApp.KullaniciSvc.isLoggedIn1 inValue = new KodA.ArsivNetTransferApp.KullaniciSvc.isLoggedIn1();
             return ((KodA.ArsivNetTransferApp.KullaniciSvc.KullaniciService)(this)).isLoggedInAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListeleResponse1 KodA.ArsivNetTransferApp.KullaniciSvc.KullaniciService.dizinYetkiListele(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListele1 request) {
+            return base.Channel.dizinYetkiListele(request);
+        }
+        
+        public KodA.ArsivNetTransferApp.KullaniciSvc.serviceResult dizinYetkiListele(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListeleParametre arg0) {
+            KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListele1 inValue = new KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListele1();
+            inValue.arg0 = arg0;
+            KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListeleResponse1 retVal = ((KodA.ArsivNetTransferApp.KullaniciSvc.KullaniciService)(this)).dizinYetkiListele(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListeleResponse1> KodA.ArsivNetTransferApp.KullaniciSvc.KullaniciService.dizinYetkiListeleAsync(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListele1 request) {
+            return base.Channel.dizinYetkiListeleAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListeleResponse1> dizinYetkiListeleAsync(KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListeleParametre arg0) {
+            KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListele1 inValue = new KodA.ArsivNetTransferApp.KullaniciSvc.dizinYetkiListele1();
+            inValue.arg0 = arg0;
+            return ((KodA.ArsivNetTransferApp.KullaniciSvc.KullaniciService)(this)).dizinYetkiListeleAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]

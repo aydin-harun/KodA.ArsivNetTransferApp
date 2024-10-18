@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KodA.ArsivNetTransferApp.ArsivPlanlamaSvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
@@ -384,68 +385,30 @@ namespace KodA.ArsivNetTransferApp
             }
         }
 
-        public static List<KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniCocuklariniListeleSonuc> GetArchiveFolder(int kokDizinId, string fullDizinPath)
+        public static KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDizini GetArchiveFolder(string fullDizinPath)
         {
             try
-            {
-                int lastId = kokDizinId;
-                string[] dizinIdleri = fullDizinPath.Split('|');
+            {   
                 using (GetOperationContextScope(arsivPlanlamaServiceClient.InnerChannel))
                 {
-                    List<KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniCocuklariniListeleSonuc> arsivDizinis = new List<KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniCocuklariniListeleSonuc>();
-                    var methodParams = new ArsivPlanlamaSvc.arsivDiziniCocuklariniListeleParametre();
-                    methodParams.id = lastId;
-                    methodParams.idSpecified = true;
-                    //methodParams.start = 0;
-                    //methodParams.limit = 50; 
-                    var res = arsivPlanlamaServiceClient.arsivDiziniCocuklariListele(methodParams);
-                    if (res.success)
+                    KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDizinleriniListeleParametre pp = new ArsivPlanlamaSvc.arsivDizinleriniListeleParametre();
+                    pp.dizinId = Convert.ToInt32(fullDizinPath);
+                    pp.dizinIdSpecified = true;
+                    pp.altDizinSeviyesi = altDizinSeviyesiEnum.HIC;
+                    pp.altDizinSeviyesiSpecified = true;
+                    var resP = arsivPlanlamaServiceClient.arsivDiziniListele(pp);
+                    if(resP.success)
                     {
-                        if (res.dtoList != null)
+                        if (resP.dtoList != null &&resP.dtoList.Length > 0 )
                         {
-                            foreach (object obj in res.dtoList)
-                            {
-                                arsivDizinis.Add((KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniCocuklariniListeleSonuc)obj);
-                            }
+                            return resP.dtoList.FirstOrDefault() as KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDizini;                            
+                        }
+                        else 
+                        { 
+                            return null; 
                         }
                     }
-                    if (arsivDizinis.Count == 0)
-                        return null;
-                    lastId = arsivDizinis[0].id;
-                    arsivDizinis.Clear();
-
-                    foreach (string _dizinId in dizinIdleri)
-                    {
-                        int dizinId = Convert.ToInt32(_dizinId);
-                        using (GetOperationContextScope(arsivPlanlamaServiceClient.InnerChannel))
-                        {
-                            arsivDizinis.Clear();
-                            List<KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniCocuklariniListeleSonuc> arsivDizinis1 = new List<KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniCocuklariniListeleSonuc>();
-                            var methodParams1 = new ArsivPlanlamaSvc.arsivDiziniCocuklariniListeleParametre();
-                            methodParams.id = lastId;
-                            methodParams.idSpecified = true;
-                            //methodParams.start = 0;
-                            //methodParams.limit = 50; 
-                            var res1 = arsivPlanlamaServiceClient.arsivDiziniCocuklariListele(methodParams);
-                            if (res1.success)
-                            {
-                                if (res1.dtoList != null)
-                                {
-                                    foreach (object obj in res1.dtoList)
-                                    {
-                                        arsivDizinis.Add((KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniCocuklariniListeleSonuc)obj);
-                                    }
-                                }
-                            }
-                            if (arsivDizinis.Count == 0)
-                                return null;
-                            //// burada sdp kodundan ilgili dizini buluyoruz
-                            if (arsivDizinis.Count() == 0)
-                                return null;
-                            lastId = arsivDizinis.First().id;
-                        }
-                    }
-                    return arsivDizinis;
+                    return null;
                 }
             }
             catch (Exception ex)

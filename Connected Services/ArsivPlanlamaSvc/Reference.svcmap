@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="48d6805a-91bd-4301-b809-08f0c62f98af" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="48d6805a-91bd-4301-b809-08f0c62f98af" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,10 +19,10 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="https://arsivnet.ankara.edu.tr/arsivnet_webservice/api/arsivplanlamaservicesoap?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://172.28.1.94:8500/arsivnet_webservice/api/arsivplanlamaservicesoap?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ArsivPlanlamaServiceService1.wsdl" MetadataType="Wsdl" ID="26464a82-9124-4923-a5ea-8b1100069491" SourceId="1" SourceUrl="https://arsivnet.ankara.edu.tr/arsivnet_webservice/api/arsivplanlamaservicesoap?wsdl" />
+    <MetadataFile FileName="ArsivPlanlamaServiceService.wsdl" MetadataType="Wsdl" ID="77e1b2e6-ae33-4280-aee0-c5fd42a74757" SourceId="1" SourceUrl="http://172.28.1.94:8500/arsivnet_webservice/api/arsivplanlamaservicesoap?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

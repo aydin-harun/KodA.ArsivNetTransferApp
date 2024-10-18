@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7f7f7f20-9041-4e85-b353-13b63555a90e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="7f7f7f20-9041-4e85-b353-13b63555a90e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,10 +19,10 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="https://arsivnet.ankara.edu.tr/arsivnet_webservice/api/varlikyonetimiservicesoap?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://172.28.1.94:8500/arsivnet_webservice/api/varlikyonetimiservicesoap?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="VarlikYonetimiServiceService1.wsdl" MetadataType="Wsdl" ID="2e35feea-a469-4ae4-b26d-5fa29f9bd3b6" SourceId="1" SourceUrl="https://arsivnet.ankara.edu.tr/arsivnet_webservice/api/varlikyonetimiservicesoap?wsdl" />
+    <MetadataFile FileName="VarlikYonetimiServiceService.wsdl" MetadataType="Wsdl" ID="bd419e5b-b68e-4aef-998d-6f597bc25edd" SourceId="1" SourceUrl="http://172.28.1.94:8500/arsivnet_webservice/api/varlikyonetimiservicesoap?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

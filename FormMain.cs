@@ -135,12 +135,12 @@ namespace KodA.ArsivNetTransferApp
                 listViewLog.Items.Clear();
                 List<Batch> lBatches = new List<Batch>();
                 List<Storage> lStorages = new List<Storage>();
-                DataTable dtDepArsivNetEslestirme = null;// InstitueBS.GetDepartmanArsivEsletirme(currentDepartman.tDepartmanId);
-                if (dtDepArsivNetEslestirme.Rows.Count == 0)
-                {
-                    MessageBox.Show("Export Eşleştirme Bilgisi Bulunamadı...", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+                //DataTable dtDepArsivNetEslestirme = null;// InstitueBS.GetDepartmanArsivEsletirme(currentDepartman.tDepartmanId);
+                //if (dtDepArsivNetEslestirme.Rows.Count == 0)
+                //{
+                //    MessageBox.Show("Export Eşleştirme Bilgisi Bulunamadı...", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //    return;
+                //}
 
                 transferSettingDep = AdminBS.GetDepartmanGDTransferSetting(currentDepartman.tDepartmanId);
                 if (transferSettingDep == null)
@@ -163,14 +163,12 @@ namespace KodA.ArsivNetTransferApp
                 int arsivNetDetayTipId = transferSettingDep.FolderDetailTypeId;
                 int arsivNetTipId = transferSettingDep.BatchGDSeriesId;
                 int arsivNetUstVeriTanimId = transferSettingDep.PageGroupGDSeriesId;
-                // todo : uretici Id belirlenecek
-                int arsivNetUreticiId = 0;
+                int arsivNetUreticiId = transferSettingDep.CreatedById;
 
-                List<KodA.ArsivNetTransferApp.ArsivPlanlamaSvc.arsivDiziniCocuklariniListeleSonuc> arsivDizinleri = null;
+                ArsivPlanlamaSvc.arsivDizini arsivDizini = null;
 
-                arsivDizinleri =
-                    ServiceHelper.GetArchiveFolder(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["KokDizinId"]), currentDepartman.Description.Trim());
-                if (arsivDizinleri == null || arsivDizinleri.Count == 0)
+                arsivDizini = ServiceHelper.GetArchiveFolder(transferSettingDep.FolderKeys);
+                if (arsivDizini == null)
                 {
                     MessageBox.Show("Export Edilecek Departman Karşılığı Bulunamadı...", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -206,6 +204,8 @@ namespace KodA.ArsivNetTransferApp
                         }
                         storage = lStorages.SingleOrDefault(s => s.tStorageId == batch.tStorageId);
 
+                        // batch ıçın klasor olustur
+
                         // indeks datası alma
                         DataTable dataTableIndex = CommonBS.GetDepartmanDataWithLookUp(currentDepartman.tDepartmanId, EnumFieldType.UstAlan, (int)row["tBatchId"],
                             (int)row["tPageGroupId"], currentDepartman, docTypeIndexFields);
@@ -215,7 +215,7 @@ namespace KodA.ArsivNetTransferApp
                         ArsivMalzemeSvc.arsivMalzemesiEkleMTOMParametre arsivMalzemesi = CreateArsivMalzemesi((int)row["tPageGroupId"], currentDepartman,
                             dataTableIndex.Rows[0], Path.Combine(storage.PdfPath, batch.RelativePath, batch.BatchName, row["tPageGroupId"].ToString() + ".pdf"), 
                             arsivNetDetayTipId, arsivNetTipId,
-                            arsivDizinleri[0].id, arsivNetUstVeriTanimId, arsivNetUreticiId);
+                            arsivDizini.id, arsivNetUstVeriTanimId, arsivNetUreticiId);
                         var malzemeResult = ServiceHelper.CreateArsivMalzeme(arsivMalzemesi);
                         arsivMalzemesi.arsivMalzemesiMTOMDetay[0].binaryDosya = null;
                         arsivMalzemesi = null;
