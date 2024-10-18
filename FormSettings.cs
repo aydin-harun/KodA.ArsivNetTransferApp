@@ -101,6 +101,8 @@ namespace KodA.ArsivNetTransferApp
                 FieldMatch fieldMatch = (FieldMatch)gridViewFields.GetRow(i);
                 int metaId = 0;
                 string USTVER_ALAN_ADI = fieldMatch.USTVER_ALAN_ADI;
+                if (USTVER_ALAN_ADI == null)
+                    USTVER_ALAN_ADI = fieldMatch.USTVER_ALAN_ADI = "";
                 if (fieldMatch.USTVER_ALAN_ADI.Contains("RefID"))
                 {
                     string[] metaDataParts = fieldMatch.USTVER_ALAN_ADI.Split('=');
