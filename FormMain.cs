@@ -165,16 +165,16 @@ namespace KodA.ArsivNetTransferApp
                 int arsivNetUstVeriTanimId = transferSettingDep.PageGroupGDSeriesId;
                 int arsivNetUreticiId = transferSettingDep.CreatedById;
 
-                ArsivPlanlamaSvc.arsivDizini arsivDizini = null;
+                ArsivPlanlamaSvc.arsivDizini parentArsivDizini = null;
 
-                arsivDizini = ServiceHelper.GetArchiveFolder(transferSettingDep.FolderKeys);
-                if (arsivDizini == null)
+                parentArsivDizini = ServiceHelper.GetArchiveFolder(transferSettingDep.FolderKeys);
+                if (parentArsivDizini == null)
                 {
                     MessageBox.Show("Export Edilecek Departman Karşılığı Bulunamadı...", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                dtExportPg = null;// CommonBS.GetExportPG(currentDepartman.tDepartmanId);
+                dtExportPg = CommonBS.GetExportPG(currentDepartman.tDepartmanId);
                 if (dtExportPg.Rows.Count == 0)
                 {
                     MessageBox.Show("Export Edilecek Kayıt Bulunamadı...", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -186,6 +186,9 @@ namespace KodA.ArsivNetTransferApp
                 progressBarStatus.Minimum = 0;
                 progressBarStatus.Maximum = dtExportPg.Rows.Count;
                 progressBarStatus.Value = 0;
+
+                ArsivPlanlamaSvc.arsivDizini batchArsivDizini = null;
+
                 foreach (DataRow row in dtExportPg.Rows)
                 {
                     try
@@ -195,9 +198,11 @@ namespace KodA.ArsivNetTransferApp
                         if (lBatches.All(s => s.tBatchId != (int)row["tBatchId"]))
                         {
                             lBatches.Add(CommonBS.GetBatchById(true, (int)row["tBatchId"]));
+                            batchArsivDizini = CreateFolderOnArsivNet(parentArsivDizini.id, lBatches.SingleOrDefault(s => s.tBatchId == (int)row["tBatchId"]).BarcodeValue);
                         }
 
                         batch = lBatches.SingleOrDefault(s => s.tBatchId == (int)row["tBatchId"]);
+
                         if (lStorages.All(s => s.tStorageId != batch.tStorageId))
                         {
                             lStorages.Add(CommonBS.GetStorage(true, batch.tStorageId)[0]);
@@ -213,9 +218,9 @@ namespace KodA.ArsivNetTransferApp
                         //int birimKodu = 0;
                         //isNumeric(AllDepartmas.Where(d => d.tDepartmanId == currentDepartman.UpDepartmanId).First().Description, out birimKodu);
                         ArsivMalzemeSvc.arsivMalzemesiEkleMTOMParametre arsivMalzemesi = CreateArsivMalzemesi((int)row["tPageGroupId"], currentDepartman,
-                            dataTableIndex.Rows[0], Path.Combine(storage.PdfPath, batch.RelativePath, batch.BatchName, row["tPageGroupId"].ToString() + ".pdf"), 
+                            dataTableIndex.Rows[0], Path.Combine(storage.PdfPath, batch.RelativePath, batch.BatchName, row["tPageGroupId"].ToString() + ".pdf"),
                             arsivNetDetayTipId, arsivNetTipId,
-                            arsivDizini.id, arsivNetUstVeriTanimId, arsivNetUreticiId);
+                            batchArsivDizini.id, arsivNetUstVeriTanimId, arsivNetUreticiId);
                         var malzemeResult = ServiceHelper.CreateArsivMalzeme(arsivMalzemesi);
                         arsivMalzemesi.arsivMalzemesiMTOMDetay[0].binaryDosya = null;
                         arsivMalzemesi = null;
@@ -260,6 +265,74 @@ namespace KodA.ArsivNetTransferApp
                 toolStripButtonStartExport.Enabled = true;
                 toolStripButtonResetError.Enabled = true;
                 buttonPrepare.Enabled = true;
+            }
+        }
+
+        ArsivPlanlamaSvc.arsivDizini CreateFolderOnArsivNet(int parentKlasorId, string batchBarcode)
+        {
+            try
+            {
+
+                var folders = ServiceHelper.GetArchiveFolderChildren(parentKlasorId);
+                if (folders != null && folders.Count > 0)
+                {
+                    var folder = folders.Where(e => e.dizinKodu == batchBarcode).FirstOrDefault();
+                    if (folder != null)
+                    {
+                        return ServiceHelper.GetArchiveFolder(folder.id.ToString());
+                    }
+                }
+
+
+                ArsivPlanlamaSvc.arsivDiziniEkleParametre parametre = new ArsivPlanlamaSvc.arsivDiziniEkleParametre();
+                parametre.dizinKodu = batchBarcode;
+                parametre.dizinAdi = batchBarcode;
+                parametre.ustDizinId = parentKlasorId;
+                parametre.ustDizinIdSpecified = true;
+                parametre.paylasimDurumu = ArsivPlanlamaSvc.paylasimDurumuEnum.KURUMA_ACIK;
+                parametre.paylasimDurumuSpecified = true;
+                parametre.arsivPlaniId = 56;
+                parametre.arsivPlaniIdSpecified = true;
+                var resultCreateChild = ServiceHelper.CreateArchiveChild(parametre);
+                ArsivPlanlamaSvc.arsivDizini arsivDizini = (ArsivPlanlamaSvc.arsivDizini)((object[])resultCreateChild)[0];
+
+
+                KullaniciSvc.kullaniciDizinVeDizinUreticiYetkisiGuncelleParametre dizinUreticiYetkisiGuncelleParametre = new KullaniciSvc.kullaniciDizinVeDizinUreticiYetkisiGuncelleParametre()
+                {
+                    dizinYetkiList = new KullaniciSvc.dizinYetkiParametre[] {
+                        new KullaniciSvc.dizinYetkiParametre()
+                        {
+                            altDizinlerDahil = true,
+                            altDizinlerDahilSpecified = true,
+                            degistirme = true,
+                            degistirmeSpecified = true,
+                            dizinId = arsivDizini.id,
+                            dizinIdSpecified = true,
+                            ekleme = true,
+                            eklemeSpecified = true,
+                            gizlilikDerecesiId = 1531,
+                            gizlilikDerecesiIdSpecified = true,
+                            okuma = true,
+                            okumaSpecified = true,
+                            silme = true,
+                            silmeSpecified = true,
+                            sorgulama = true,
+                            sorgulamaSpecified = true,
+                            yonetim = true,
+                            yonetimSpecified = true
+                        }
+                    },
+                    kullaniciId = ServiceHelper.wcfLoginResult.kullanici.id,
+                    kullaniciIdSpecified = true,
+                    varlikId = -1,
+                    varlikIdSpecified = true
+                };
+                bool resultCreateAuth = ServiceHelper.CreateArchiveChildAuth2(dizinUreticiYetkisiGuncelleParametre);
+                return arsivDizini;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
 
@@ -310,17 +383,18 @@ namespace KodA.ArsivNetTransferApp
             parametre.remoteId = tPageGroupId.ToString();
             parametre.kod = tPageGroupId.ToString();
             parametre.ad = tPageGroupId.ToString();
-            if (currentDepartman.DepartmanCode != "DIA" && currentDepartman.DepartmanCode != "Fotograf")
+
+            parametre.ustveri = new ArsivMalzemeSvc.arsivMalzemesiUstveri()
             {
-                parametre.ustveri = new ArsivMalzemeSvc.arsivMalzemesiUstveri()
-                {
-                    ustveri = CreateJsonFromRow(row),
-                    ustveriTanimId = arsivNetUstVeriTanimId,
-                    ustveriTanimIdSpecified = true
-                };
-            }
+                ustveri = CreateJsonFromRow(row),
+                ustveriTanimId = arsivNetUstVeriTanimId,
+                ustveriTanimIdSpecified = true
+            };
+
             parametre.ustveri.ustveri = "{" + parametre.ustveri.ustveri + "}";
-            FileInfo fileInfo = new FileInfo(pdfPath);
+            //FileInfo fileInfo = new FileInfo(pdfPath);
+            pdfPath = "";
+
             parametre.arsivMalzemesiMTOMDetay = new ArsivMalzemeSvc.arsivMalzemesiDetayEkleMTOMParametre[1]
             {
                 new ArsivMalzemeSvc.arsivMalzemesiDetayEkleMTOMParametre()
