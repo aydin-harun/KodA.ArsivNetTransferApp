@@ -498,7 +498,10 @@ namespace KodA.ArsivNetTransferApp
                     {
                         if (row[e.SBFieldName] != DBNull.Value)
                         {
-                            fileData[e.GDFieldName] = GetLookupMatchValue(Convert.ToInt32(row[e.SBFieldName]), e.GDMetadataId);
+                            if (fieldMatches.Where(f => f.tGDTransferSettingFieldMatchId == e.tGDTransferSettingFieldMatchId).FirstOrDefault().GDFieldName.Contains("RefId"))
+                                fileData[e.GDFieldName] = GetLookupMatchValue(Convert.ToInt32(row[e.SBFieldName]), e.GDMetadataId);
+                            else
+                                fileData[e.GDFieldName] = row[e.SBFieldName+"_Description"].ToString();
                         }
                         else
                         {
