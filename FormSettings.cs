@@ -94,6 +94,7 @@ namespace KodA.ArsivNetTransferApp
             transferSettingDep.PageGroupGDSeriesId = selectedKlasor.USTVERI_ID;
             transferSettingDep.FolderKeys = textEditArsivNetIdPath.Text;
             transferSettingDep.FolderDetailTypeId =Convert.ToInt32(textEditFolderTypeDetailId.Text);
+            transferSettingDep.CreatedById = Convert.ToInt32(textEditCreatedById.Text);
 
             List<GDTransferSettingFieldMatch> transferSettingFieldMatches = new List<GDTransferSettingFieldMatch>();
             for (int i = 0; i < gridViewFields.RowCount; i++)

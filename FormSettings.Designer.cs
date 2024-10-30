@@ -36,38 +36,41 @@ namespace KodA.ArsivNetTransferApp
             this.gridColumnGDField = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemLookUpEditGDFileds = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textEditFolderTypeDetailId = new DevExpress.XtraEditors.TextEdit();
             this.textEditArsivNetIdPath = new DevExpress.XtraEditors.TextEdit();
             this.comboBoxEditGDDep = new DevExpress.XtraEditors.ComboBoxEdit();
             this.comboBoxEditSBDep = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.simpleButtonSaveFieldMap = new DevExpress.XtraEditors.SimpleButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textEditFolderTypeDetailId = new DevExpress.XtraEditors.TextEdit();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textEditCreatedById = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlFields)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewFields)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditGDFileds)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditFolderTypeDetailId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditArsivNetIdPath.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEditGDDep.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEditSBDep.Properties)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditFolderTypeDetailId.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditCreatedById.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControlFields
             // 
             this.gridControlFields.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControlFields.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControlFields.Location = new System.Drawing.Point(0, 125);
+            this.gridControlFields.Location = new System.Drawing.Point(0, 166);
             this.gridControlFields.MainView = this.gridViewFields;
             this.gridControlFields.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControlFields.Name = "gridControlFields";
             this.gridControlFields.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEditGDFileds});
-            this.gridControlFields.Size = new System.Drawing.Size(800, 275);
+            this.gridControlFields.Size = new System.Drawing.Size(800, 234);
             this.gridControlFields.TabIndex = 7;
             this.gridControlFields.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewFields});
@@ -132,10 +135,12 @@ namespace KodA.ArsivNetTransferApp
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.textEditCreatedById);
             this.panel2.Controls.Add(this.textEditFolderTypeDetailId);
             this.panel2.Controls.Add(this.textEditArsivNetIdPath);
             this.panel2.Controls.Add(this.comboBoxEditGDDep);
             this.panel2.Controls.Add(this.comboBoxEditSBDep);
+            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
@@ -144,8 +149,15 @@ namespace KodA.ArsivNetTransferApp
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 125);
+            this.panel2.Size = new System.Drawing.Size(800, 166);
             this.panel2.TabIndex = 5;
+            // 
+            // textEditFolderTypeDetailId
+            // 
+            this.textEditFolderTypeDetailId.Location = new System.Drawing.Point(318, 93);
+            this.textEditFolderTypeDetailId.Name = "textEditFolderTypeDetailId";
+            this.textEditFolderTypeDetailId.Size = new System.Drawing.Size(368, 22);
+            this.textEditFolderTypeDetailId.TabIndex = 6;
             // 
             // textEditArsivNetIdPath
             // 
@@ -178,6 +190,15 @@ namespace KodA.ArsivNetTransferApp
             this.comboBoxEditSBDep.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.comboBoxEditSBDep.Size = new System.Drawing.Size(368, 22);
             this.comboBoxEditSBDep.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(5, 96);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(253, 17);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "ArşivNet Arşiv Malzzemesi Detay Tip Id";
             // 
             // label3
             // 
@@ -227,21 +248,21 @@ namespace KodA.ArsivNetTransferApp
             this.simpleButtonSaveFieldMap.Text = "Kaydet";
             this.simpleButtonSaveFieldMap.Click += new System.EventHandler(this.simpleButtonSaveFieldMap_Click);
             // 
-            // label4
+            // label5
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 96);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(253, 17);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "ArşivNet Arşiv Malzzemesi Detay Tip Id";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(5, 122);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(155, 17);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "ArşivNet Üretici Birim Id";
             // 
-            // textEditFolderTypeDetailId
+            // textEditCreatedById
             // 
-            this.textEditFolderTypeDetailId.Location = new System.Drawing.Point(318, 93);
-            this.textEditFolderTypeDetailId.Name = "textEditFolderTypeDetailId";
-            this.textEditFolderTypeDetailId.Size = new System.Drawing.Size(368, 22);
-            this.textEditFolderTypeDetailId.TabIndex = 6;
+            this.textEditCreatedById.Location = new System.Drawing.Point(318, 119);
+            this.textEditCreatedById.Name = "textEditCreatedById";
+            this.textEditCreatedById.Size = new System.Drawing.Size(368, 22);
+            this.textEditCreatedById.TabIndex = 6;
             // 
             // FormSettings
             // 
@@ -258,11 +279,12 @@ namespace KodA.ArsivNetTransferApp
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditGDFileds)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditFolderTypeDetailId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditArsivNetIdPath.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEditGDDep.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEditSBDep.Properties)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEditFolderTypeDetailId.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditCreatedById.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -286,5 +308,7 @@ namespace KodA.ArsivNetTransferApp
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.TextEdit textEditFolderTypeDetailId;
         private System.Windows.Forms.Label label4;
+        private DevExpress.XtraEditors.TextEdit textEditCreatedById;
+        private System.Windows.Forms.Label label5;
     }
 }
