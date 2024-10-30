@@ -477,7 +477,13 @@ namespace KodA.ArsivNetTransferApp
                     //        fileData[e.GDFieldName] = null;
                     //    }
                     //}
-                    if (docTypeIndexMap.FieldDataType == EnumFieldDataType.Tarih.GetHashCode() || docTypeIndexMap.FieldDataType == EnumFieldDataType.TarihSaat.GetHashCode())
+                    if(e.GDFieldName == "tcNo")
+                    {
+                        long tcNo = 0;
+                        long.TryParse(row[e.SBFieldName].ToString(), out tcNo);
+                        fileData[e.GDFieldName] = tcNo;
+                    }
+                    else if (docTypeIndexMap.FieldDataType == EnumFieldDataType.Tarih.GetHashCode() || docTypeIndexMap.FieldDataType == EnumFieldDataType.TarihSaat.GetHashCode())
                     {
                         if (row[e.SBFieldName] != DBNull.Value)
                         {
@@ -492,7 +498,7 @@ namespace KodA.ArsivNetTransferApp
                     {
                         if (row[e.SBFieldName] != DBNull.Value)
                         {
-                            fileData[e.GDFieldName] = row[e.SBFieldName+"_Description"].ToString();
+                            fileData[e.GDFieldName] = GetLookupMatchValue(Convert.ToInt32(row[e.SBFieldName]), e.GDMetadataId);
                         }
                         else
                         {

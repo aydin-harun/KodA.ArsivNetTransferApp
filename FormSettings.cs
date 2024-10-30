@@ -103,7 +103,7 @@ namespace KodA.ArsivNetTransferApp
                 string USTVER_ALAN_ADI = fieldMatch.USTVER_ALAN_ADI;
                 if (USTVER_ALAN_ADI == null)
                     USTVER_ALAN_ADI = fieldMatch.USTVER_ALAN_ADI = "";
-                if (fieldMatch.USTVER_ALAN_ADI.Contains("RefID"))
+                if (fieldMatch.USTVER_ALAN_ADI.Contains("RefId"))
                 {
                     string[] metaDataParts = fieldMatch.USTVER_ALAN_ADI.Split('=');
                     MatchCollection matches = Regex.Matches(metaDataParts[1], @"\d+");
