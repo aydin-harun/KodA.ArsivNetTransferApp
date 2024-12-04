@@ -319,7 +319,7 @@ namespace KodA.ArsivNetTransferApp
                             sorgulama = true,
                             sorgulamaSpecified = true,
                             yonetim = true,
-                            yonetimSpecified = true                            
+                            yonetimSpecified = true
                         }
                     },
                     kullaniciId = ServiceHelper.wcfLoginResult.kullanici.id,
@@ -477,7 +477,7 @@ namespace KodA.ArsivNetTransferApp
                     //        fileData[e.GDFieldName] = null;
                     //    }
                     //}
-                    if(e.GDFieldName == "tcNo")
+                    if (e.GDFieldName == "tcNo")
                     {
                         long tcNo = 0;
                         long.TryParse(row[e.SBFieldName].ToString(), out tcNo);
@@ -498,10 +498,10 @@ namespace KodA.ArsivNetTransferApp
                     {
                         if (row[e.SBFieldName] != DBNull.Value)
                         {
-                            if (fieldMatches.Where(f => f.tGDTransferSettingFieldMatchId == e.tGDTransferSettingFieldMatchId).FirstOrDefault().GDFieldName.Contains("RefId"))
+                            if (fieldMatches.Where(f => f.tGDTransferSettingFieldMatchId == e.tGDTransferSettingFieldMatchId).FirstOrDefault().GDMetadataId > 0)
                                 fileData[e.GDFieldName] = GetLookupMatchValue(Convert.ToInt32(row[e.SBFieldName]), e.GDMetadataId);
                             else
-                                fileData[e.GDFieldName] = row[e.SBFieldName+"_Description"].ToString();
+                                fileData[e.GDFieldName] = row[e.SBFieldName + "_Description"].ToString();
                         }
                         else
                         {
@@ -525,13 +525,13 @@ namespace KodA.ArsivNetTransferApp
                     if (row.Table.Columns.Contains("BarcodeValue"))
                     {
                         if (row["BarcodeValue"] != DBNull.Value)
-                    {
-                        fileData["Barkod"] = row["BarcodeValue"].ToString();
-                    }
-                    else
-                    {
-                        fileData["Barkod"] = null;
-                    }
+                        {
+                            fileData["Barkod"] = row["BarcodeValue"].ToString();
+                        }
+                        else
+                        {
+                            fileData["Barkod"] = null;
+                        }
                     }
 
                 }

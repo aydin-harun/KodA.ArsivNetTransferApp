@@ -104,13 +104,18 @@ namespace KodA.ArsivNetTransferApp
                 string USTVER_ALAN_ADI = fieldMatch.USTVER_ALAN_ADI;
                 if (USTVER_ALAN_ADI == null)
                     USTVER_ALAN_ADI = fieldMatch.USTVER_ALAN_ADI = "";
-                if (fieldMatch.USTVER_ALAN_ADI.Contains("RefId"))
+                var aArsivField = arsivTipis.Where(ee => ee.ARSIV_TIP_ID == selectedKlasor.ARSIV_TIP_ID && ee.USTVER_ALAN_ADI == USTVER_ALAN_ADI).FirstOrDefault();
+                if (aArsivField != null)
+                    fieldMatch.VERI_TIPI = aArsivField.VERI_TIPI;
+                if (fieldMatch.VERI_TIPI == null)
+                    fieldMatch.VERI_TIPI = "";
+                if (fieldMatch.VERI_TIPI.ToUpperInvariant().Contains("REFID"))
                 {
-                    string[] metaDataParts = fieldMatch.USTVER_ALAN_ADI.Split('=');
+                    string[] metaDataParts = fieldMatch.VERI_TIPI.Split('=');
                     MatchCollection matches = Regex.Matches(metaDataParts[1], @"\d+");
                     if (matches.Count > 0)
                         metaId = Convert.ToInt32(matches[0].Value);
-                    USTVER_ALAN_ADI = fieldMatch.USTVER_ALAN_ADI.Split('(')[0].Trim();
+                    //USTVER_ALAN_ADI = fieldMatch.USTVER_ALAN_ADI.Split('(')[0].Trim();
 
                 }
                 transferSettingFieldMatches.Add(new GDTransferSettingFieldMatch()
