@@ -395,8 +395,11 @@ namespace KodA.ArsivNetTransferApp
                 ustveriTanimIdSpecified = true
             };
 
+            //Kod ,Ad, KapsamBaslangicZamani istisnalari
+            CreateAdKodKapsamZamaniFromRow(parametre, row);
+
             //FileInfo fileInfo = new FileInfo(pdfPath);
-            pdfPath = "C:\\Users\\Administrator\\Desktop\\deneme.pdf";
+            //pdfPath = "C:\\Users\\Administrator\\Desktop\\deneme.pdf";
 
             parametre.arsivMalzemesiMTOMDetay = new ArsivMalzemeSvc.arsivMalzemesiDetayEkleMTOMParametre[1]
             {
@@ -477,46 +480,51 @@ namespace KodA.ArsivNetTransferApp
                     //        fileData[e.GDFieldName] = null;
                     //    }
                     //}
-                    if (e.GDFieldName == "tcNo")
-                    {
-                        long tcNo = 0;
-                        long.TryParse(row[e.SBFieldName].ToString(), out tcNo);
-                        fileData[e.GDFieldName] = tcNo;
-                    }
-                    else if (docTypeIndexMap.FieldDataType == EnumFieldDataType.Tarih.GetHashCode() || docTypeIndexMap.FieldDataType == EnumFieldDataType.TarihSaat.GetHashCode())
-                    {
-                        if (row[e.SBFieldName] != DBNull.Value)
-                        {
-                            fileData[e.GDFieldName] = (DateTime)row[e.SBFieldName];
-                        }
-                        else
-                        {
-                            fileData[e.GDFieldName] = null;
-                        }
-                    }
-                    else if (docTypeIndexMap.FieldDataType == EnumFieldDataType.Sayi.GetHashCode() && docTypeIndexMap.tLookUpDataId > 0)
-                    {
-                        if (row[e.SBFieldName] != DBNull.Value)
-                        {
-                            if (fieldMatches.Where(f => f.tGDTransferSettingFieldMatchId == e.tGDTransferSettingFieldMatchId).FirstOrDefault().GDMetadataId > 0)
-                                fileData[e.GDFieldName] = GetLookupMatchValue(Convert.ToInt32(row[e.SBFieldName]), e.GDMetadataId);
-                            else
-                                fileData[e.GDFieldName] = row[e.SBFieldName + "_Description"].ToString();
-                        }
-                        else
-                        {
-                            fileData[e.GDFieldName] = null;
-                        }
-                    }
+                    if (e.GDFieldName == "Kod" || e.GDFieldName == "Ad" || e.GDFieldName == "KapsamBaslangicZamani")
+                    { }
                     else
                     {
-                        if (row[e.SBFieldName] != DBNull.Value)
+                        if (e.GDFieldName == "tcNo")
                         {
-                            fileData[e.GDFieldName] = row[e.SBFieldName].ToString();
+                            long tcNo = 0;
+                            long.TryParse(row[e.SBFieldName].ToString(), out tcNo);
+                            fileData[e.GDFieldName] = tcNo;
+                        }
+                        else if (docTypeIndexMap.FieldDataType == EnumFieldDataType.Tarih.GetHashCode() || docTypeIndexMap.FieldDataType == EnumFieldDataType.TarihSaat.GetHashCode())
+                        {
+                            if (row[e.SBFieldName] != DBNull.Value)
+                            {
+                                fileData[e.GDFieldName] = (DateTime)row[e.SBFieldName];
+                            }
+                            else
+                            {
+                                fileData[e.GDFieldName] = null;
+                            }
+                        }
+                        else if (docTypeIndexMap.FieldDataType == EnumFieldDataType.Sayi.GetHashCode() && docTypeIndexMap.tLookUpDataId > 0)
+                        {
+                            if (row[e.SBFieldName] != DBNull.Value)
+                            {
+                                if (fieldMatches.Where(f => f.tGDTransferSettingFieldMatchId == e.tGDTransferSettingFieldMatchId).FirstOrDefault().GDMetadataId > 0)
+                                    fileData[e.GDFieldName] = GetLookupMatchValue(Convert.ToInt32(row[e.SBFieldName]), e.GDMetadataId);
+                                else
+                                    fileData[e.GDFieldName] = row[e.SBFieldName + "_Description"].ToString();
+                            }
+                            else
+                            {
+                                fileData[e.GDFieldName] = null;
+                            }
                         }
                         else
                         {
-                            fileData[e.GDFieldName] = null;
+                            if (row[e.SBFieldName] != DBNull.Value)
+                            {
+                                fileData[e.GDFieldName] = row[e.SBFieldName].ToString();
+                            }
+                            else
+                            {
+                                fileData[e.GDFieldName] = null;
+                            }
                         }
                     }
                 }
@@ -537,6 +545,38 @@ namespace KodA.ArsivNetTransferApp
                 }
             });
             return fileData.ToString();
+        }
+
+
+        void CreateAdKodKapsamZamaniFromRow(ArsivMalzemeSvc.arsivMalzemesiEkleMTOMParametre parametre, DataRow row)
+        {
+            var kodField = fieldMatches.Where(ee => ee.GDFieldName == "Kod").FirstOrDefault();
+            if(kodField != null)
+            {
+                if (row[kodField.SBFieldName] != DBNull.Value)
+                {
+                    if (!string.IsNullOrEmpty(row[kodField.SBFieldName].ToString()))
+                        parametre.kod = row[kodField.SBFieldName].ToString();
+                }
+            }
+            var adField = fieldMatches.Where(ee => ee.GDFieldName == "Ad").FirstOrDefault();
+            if (adField != null)
+            {
+                if (row[adField.SBFieldName] != DBNull.Value)
+                {
+                    if (!string.IsNullOrEmpty(row[adField.SBFieldName].ToString()))
+                        parametre.ad = row[adField.SBFieldName].ToString();
+                }
+            }
+            var kapsamZamaniField = fieldMatches.Where(ee => ee.GDFieldName == "KapsamBaslangicZamani").FirstOrDefault();
+            if (kapsamZamaniField != null)
+            {
+                if (row[kapsamZamaniField.SBFieldName] != DBNull.Value)
+                {
+                    parametre.kapsamBaslangicZamani = (DateTime)row[kapsamZamaniField.SBFieldName];
+                    parametre.kapsamBaslangicZamaniSpecified = true;
+                }
+            }            
         }
 
         string CiftTirnakArasinaAl(string deger)
